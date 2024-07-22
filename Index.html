@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/javascript/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+    <link rel="stylesheet" href="src/styles/keyframes.css">
+    <link rel="stylesheet" href="src/styles/background.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+
+
+    <!-- Início - Navbar ... Aqui temos o cabeçalho da página para desktop-->
+    <header>
+        <nav id="navbar">
+          <a href="#"> <img src="https://i.postimg.cc/sXBF1g6C/Logo.png" id="nav-logo"></a>
+            <ul class="nav_list">
+                <li class="nav-item" >
+                    <a href="#sec-home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#map">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contato</a>
+                </li>
+                <button class="btn-default">Fale conosco</button>
+
+            </ul>
+
+            <button class="btn-mobile">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </button>
+    <!--FIM-->
+ 
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Seção home-->
+        <section class="home" id="sec-home">
+            <div class="interface">
+                <div class="flex">
+                    <div class="home-text">
+                        <h4 class="text-h4">Transformamos <b style="font-weight: 700;"> complexidade</b> em</h4>
+                        <h1 class="text-h1">Oportunidades<span>.</span></h1>
+                        <p class="text-p">Na Bezerra Borges Advogados, transformamos seus problemas mais complexos em oportunidades únicas. Nossa equipe especializada está dedicada a impulsionar seus resultados através da internacionalização do seu negócio.</p>
+                        <a href="#" class="btn-default-2">Fale conosco</a>
+                    </div>
+
+                    <div class="home-img">
+                        <img class="home-background" src="imgs/Chess.png" alt="peças de xadrez">
+                        <div class="horse-shadow"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                </div> <!--flex-->
+            </div> <!--interface-->
+        </section>
+
+            <!-- Seção atributos-->
+        <section class="ux">
+            <img class="btc-right" src="imgs/btc-right.png">
+            <img class="btc-left" src="imgs/btc-left.png">
+
+            <div class="interface">
+
+                <div class="flex">
+                    <div class="ux-text">
+                        <div class="retangulo"></div>
+                        <p class="subtitle">Inovação e Excelência</p>
+                        <h3 class="text-h3">Sua Experiência, nossa prioridade</h3>
+
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="priority">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="card">
+                        <div class="card-text">
+                            <h1 class="cards-h1">01</h1>
+                            <h3 class="cards-h3">Atendimento personalizado</h3>
+                        </div>
+                        <p class="text-p">Cada cliente é único, nos dedicamos a oferecer uma experiência de atendimento que atenda suas demandas individuais.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-text">
+                            <h1 class="cards-h1">02</h1>
+                            <h3 class="cards-h3">Agilidade e <br> contato</h3>
+                        </div>
+                        <p class="text-p">Entendemos que seu tempo é precioso. Por isso, nos empenhamos em garantir uma comunicação ágil e eficaz.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-text">
+                            <h1 class="cards-h1">03</h1>
+                            <h3 class="cards-h3">Crypto <br>Friendly</h3>
+                        </div>
+                        <p class="text-p">Escolha a liberdade e flexibilidade dos pagamentos digitais com transações rápidas, seguras e com menos taxas. Inove conosco.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="map" id="map">
+            <div class="interface">
+                <div class="flex">
+
+                    <!--Imagem do mapa-->
+                    <div class="map-img">
+                        <img src="imgs/Mapa.png">
+                    </div>
+                    <!-- FIM Imagem do mapa-->
+
+
+                     <!--texto ao lado-->
+                    <div class="map-column">
+                        <div class="map-text">
+                            <div class="map-icon">
+                                <img class="map-icon-img" src="imgs/map-icon.png">
+                            </div>
+
+                            <div class="map-title">
+                                <h4 class="text-h4">Especialistas em negócios</h4>
+                                <h3 class="text-h3">Internacionais</h3>
+                            </div>
+                        </div>
+
+                        <div class="map-p">
+                            <p class="text-p">A internacionalização não é apenas uma opção, mas uma necessidade estratégica para empresas e investidores que visam crescimento e diversificação.<br><br>Com uma <b>abordagem personalizada</b>, nós desbravamos os caminhos legais e estratégicos para garantir que sua expansão internacional seja não apenas bem-sucedida, mas também sustentável e segura.</p>
+                        </div>
+                    </div>
+                     <!--Fim do texto ao lado-->
+                </div>
+            </div>
+        </section>
+
+        <section class="ux" id="team">
+            <div class="interface">
+                <div class="flex">
+                    <div class="ux-text">
+                        <div class="retangulo"></div>
+                        <p class="subtitle">Profissionais capacitados</p>
+                        <h3 class="text-h3">Conheça a Nossa Equipe</h3>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="team-card">
+                        <img class="team-card-img1" src="imgs/Imagem1.png">
+                        <div class="team-card-text">
+                            <h4>Nam ullamcorper</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                         </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-img1" src="imgs/Imagem2.png">
+                        <div class="team-card-text">
+                            <h4>Nam ullamcorper</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                         </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-img1" src="imgs/Imagem3.png">
+                        <div class="team-card-text">
+                            <h4>Nam ullamcorper</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                         </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img class="team-card-img1" src="imgs/Imagem4.png">
+                        <div class="team-card-text">
+                            <h4>Nam ullamcorper</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                         </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="rec">
+            <!--Background-->
+            <div class="boat-shadow"></div>
+            <div class="rec-bg"></div>
+            <!--fim-Background-->
+            <div class="interface">
+                <div class="flex">
+
+                    <!--Texto-->
+
+                    <div class="rec-text">
+                        <div class="rec-title">
+                            <div class="retangulo"></div>
+                            <h3 class="text-h3">Reconhecimento</h1>
+                            <p class="text-p">Nossa especialização não é uma afirmação, é uma comprovação através de sucessos tangíveis.</p>
+                        </div>
+
+                        <div class="rec-number">
+                            <div class="rec-number-1">
+                                <h5 class="text-h5">200+</h5>
+                                <p class="text-p">Empresários confiam no nosso trabalho</p>
+                            </div>
+
+                            <div class="rec-number-2">
+                                <h5 class="text-h5">R$000.000+</h5>
+                                <p class="text-p">Nossos parceiros economizaram nos últimos anos</p>
+                            </div>
+                        </div>
+
+                        <p>Com uma história de vitórias significativas e uma rede global de contatos, possuímos o conhecimento e a experiência para navegar pelos desafios legais da internacionalização. </p>
+                    </div>
+
+                    <!--Fim Texto-->
+
+                    <!--Imagem-->
+                    <div class="rec-img">
+                        <img src="imgs/Boat.png" alt="Imagem de um barco">
+                    </div>
+
+                     <!--Fim Imagem-->
+    
+                </div>
+            </div>
+        </section>
+       
+
+        <section class="exp">
+            <div class="exp-bg"></div>
+            <div class="interface">
+                <div class="flex">
+                    <div class="exp-title">
+                        <p class="subtitle">Experiência diversificada</h3>
+                        <h3 class="text-h3">Quem Atendemos</h3>
+                    </div>
+
+                    <div class="exp-cards">
+                        <div class="exp-card">
+                            <img src="imgs/card-exp1.png" style="max-width: 100%;">
+                            <div class="exp-card-txt">
+                                <h4 class="text-h4">Nam ullamcorper</h4>
+                                <p class="text-p">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </div>
+
+                        <div class="exp-card">
+                            <img src="imgs/card-exp2.png" style="max-width: 100%;">
+                            <div class="exp-card-txt">
+                                <h4 class="text-h4">Nam ullamcorper</h4>
+                                <p class="text-p">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </div>
+
+                        <div class="exp-card">
+                            <img src="imgs/card-exp3.png" style="max-width: 100%;">
+                            <div class="exp-card-txt">
+                                <h4 class="text-h4">Nam ullamcorper</h4>
+                                <p class="text-p">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="interface">
+                <div class="flex">
+                    <p class="subtitle">Experiência Personalizada</p>
+                    <h3 class="text-h3">Cada caso é tratado de forma Individual</h3>
+                    <a href="#" class="btn-default-cta">Fale conosco</a>                
+                </div>
+            </div>
+        </section>
+
+        <section class="solution">
+            <div class="solution-bg"></div>
+            <div class="interface">
+                <div class="flex">
+                    <p class="subtitle">Pellentesque eu quam</p>
+                    <h3 class="text-h3">Nossas soluções</h3>
+                </div>
+
+                <div class="solution-cards">
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone1.png" alt="">
+                            <h5>Planejamento Sucessório Internacional</h5>
+                        </div>
+                        <p class="text-p">Desenvolvimento de estratégias para a transferência de patrimônio de forma eficiente e segura em nível global. </p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone2.png" alt="">
+                            <h5>Holding patrimonial</h5>
+                        </div>
+                        <p class="text-p">Gerir e proteger o patrimônio dos seus sócios ou acionistas.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone3.png" alt="">
+                            <h5>Compliance e Regulação Internacional</h5>
+                        </div>
+                        <p class="text-p">Garantia de que as operações empresariais estão em conformidade com as leis e regulamentos dos países em que operam.</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone4.png" alt="">
+                            <h5>Consultoria Tributária Internacional</h5>
+                        </div>
+                        <p class="text-p">Análise e planejamento fiscal para otimizar a carga tributária em múltiplas jurisdições.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone5.png" alt="">
+                            <h5>Serviços Bancários Internacionais</h5>
+                        </div>
+                        <p class="text-p">Abertura e gestão de contas bancárias offshore, facilitação de transações internacionais e serviços de câmbio.</p>
+                    </div>
+
+                    <div class="solution-card">
+                        <div class="solution-card-title">
+                            <img src="imgs/icone6.png" alt="">
+                            <h5>Planejamento de Realocação Internacional</h5>
+                        </div>
+                        <p class="text-p">Assistência a empresas e indivíduos no processo de mudança para outra jurisdição, incluindo questões fiscais, legais, de imigração e de estilo de vida. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="interface">
+                <div class="flex">
+                    <img src="imgs/ebook-page.png" alt="ebook">
+                    <div class="ebook-form">
+                        <h3 class="text-h3-form">Ebook Gratuito</h1>
+                        <h4 class="text-h4-form">o Guia essencial de estruturas empresariais internacionais</h4>
+                        <p class="text-p-form">Baixe agora nosso Ebook gratuito e descubra as estratégias utilizadas por investidores e empresários de sucesso para economizar e proteger seus ativos dos riscos nacionais. Aprenda de forma prática e objetiva como as estruturas empresariais internacionais podem revolucionar seu negócio e garantir sua privacidade e segurança financeira.</p>
+
+              
+                        <form>
+                            <div class="form-email">
+                                <p><label for="form-text"></label>
+                                <input type="text" id="form-text" name="text" placeholder="Endereço de email" required/></p>
+                                <input type="submit" id="form-submit" value="Adquirir">
+                            </div>
+                        </form>                              
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq">
+            <div class="faq-shadow1"></div>
+            <div class="faq-shadow2"></div>
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="faq-title">
+                        <p class="subtitle">Ficou com alguma dúvida?</h3>
+                        <h3 class="text-h3">Perguntas frequentes</h3>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pergunta 1</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p class="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum est, maiores dolores amet velit non temporibus, magnam sequi inventore fugiat ad natus soluta cum a dolorum corrupti mollitia, illum facilis.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pergunta 2</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p class="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum est, maiores dolores amet velit non temporibus, magnam sequi inventore fugiat ad natus soluta cum a dolorum corrupti mollitia, illum facilis.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pergunta 3</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p class="text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum est, maiores dolores amet velit non temporibus, magnam sequi inventore fugiat ad natus soluta cum a dolorum corrupti mollitia, illum facilis.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pergunta 4</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum est, maiores dolores amet velit non temporibus, magnam sequi inventore fugiat ad natus soluta cum a dolorum corrupti mollitia, illum facilis.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">
+                            <span>Pergunta 5</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum est, maiores dolores amet velit non temporibus, magnam sequi inventore fugiat ad natus soluta cum a dolorum corrupti mollitia, illum facilis.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta-wpp" id="contact">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="cta-text">
+                        <div class="cta-p">
+                            <img src="imgs/icon7.png" alt="">
+                            <p class="text-p">Para outras dúvidas</p>
+                        </div>
+                        <h3 class="text-h3">Fale conosco através do Whatsapp</h3>
+                    </div>
+
+                    <div class="cta-wpp-button">
+                        <a href="#"><img src="imgs/icon8.png">Fale conosco</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="interface">
+            <div class="flex">
+                <div class="footer-form">
+                    <h4 class="text-h4-footer">Inscreva-se em nossa newsletter</h4>
+                    <p class="text-p">Receba novidades a respeito do mundo da advocacia internacional e ofertas especiais.</p>
+                    <form>
+                        <div class="form-email">
+                            <p><label for="form-text"></label>
+                            <input type="text" id="form-email-text" name="text" placeholder="Endereço de email" required/></p>
+                            <input type="submit" id="form-email-submit" value="Inscreva-se">
+                        </div>
+                    </form> 
+                </div>
+
+                <div class="footer-links">
+                    <hr>
+                    <div class="footer-containers">
+                        <div class="footer-logo">
+                            <img src="imgs/logo.png" alt="Logo Bezerra Borges Advogados">
+                            <p class="text-p">Escritório especializado em direito internacional e empresarial.</p>
+                        </div>
+
+                        <div class="footer-social">
+                            <div class="footer-social-title">
+                                <p class="text-p">Siga nossas</p>
+                                <h6 class="text-h6">Redes sociais</h6>
+                            </div>
+
+                            <div class="social-media">
+                                <a href="#"><img src="imgs/instagram.png" alt=""></a>
+                                <a href="#"><img src="imgs/Linkeding.png" alt=""></a>
+                                <a href="#"><img src="imgs/twitter.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-contacts">
+                            <h6 class="text-h6">Contato</h6>
+                            <ul>
+                                <li>(11) 9 8858 2882</li>
+                                <li>contato@boazbezerra.com.br</li>
+                                <li>SP: Av. Paulista, 1636</li>
+                            </ul>
+                        </div>  
+
+                        
+                        <div class="footer-others">
+                            <h6 class="text-h6">Links Úteis</h6>
+                            <ul>
+                                <a href="#"><li>Política de privacidade</li></a>
+                                <a href="#"><li>Cookies</li></a>
+                                <a href="#"><li>F.A.Q</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>

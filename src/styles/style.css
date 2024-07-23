@@ -284,9 +284,11 @@ section.map {
     margin: 100px 0px;
     align-items: center;
     justify-content: center;
+
     
 
 }
+
 
 section.map .map-img img{
     max-width: 100%;

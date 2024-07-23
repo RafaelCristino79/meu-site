@@ -7,22 +7,20 @@
         gap: 0;
     }
 
+
+
     section.ux .flex {
         flex-direction: column;
         padding: 0px 10%;
     }
 
-    section.ux .btc-left {
-        display: none;
-    }
+
 
     .ux {
         padding-bottom: 10px;
     }
 
-    section.ux .btc-right {
-        display: none;
-    }
+
 
     section.priority .interface .flex  {
         flex-direction: column;
@@ -53,7 +51,9 @@
         padding: 0 10%;
     }
 
-
+    section.rec .flex {
+        padding: 0;
+    }
 
     section.rec .rec-number {
         flex-direction: column;
@@ -89,6 +89,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0px;
+        margin: 40px 0px;
+    }
+
+    section.exp .exp-card {
+        min-width: 200px;
+    
     }
 
     section.cta .text-h3 {
@@ -203,7 +210,7 @@
     }
 
     .text-h3 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 24pt;
     }
 
@@ -223,14 +230,68 @@
 @media screen and (max-width: 1200px) {
     .flex {
         flex-wrap: wrap;
+        padding: 0 10%;
+    }
+
+    section.priority {
+        margin-top: 0;
+    }
+
+    section.team .flex{
+        justify-content: center;
+    }
+
+
+    
+    section.rec .rec-text {
+        width: 100%;
+    }
+
+
+    section.rec .rec-img {
+     padding-top: 20px;
+    }
+
+    section.rec .rec-number-2 {
+        width: 100%;
     }
 
     section.map .map-img img {
         width: 100%;
     }
+    
 
     section.form #form-text {
         width: 100%;
+    }
+
+    section.solution .solution-card {
+        width: 100%;
+    }
+
+    section.priority .interface .flex {
+      justify-content: flex-start;
+    }
+    section.priority .card{
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    section.priority .interface {
+        margin: 0 5%;
+    }
+
+    section.map .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.map .map-column {
+        flex: none;
+    }
+
+
+    section.faq .interface .flex .accordion{
+        max-width: 100%;
     }
 
 
@@ -242,6 +303,16 @@
 
     #form-email-text{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-h3 {
+        font-size: 20pt;
+    }
+
+    section.home .text-h1 {
+        font-size: 30pt;
     }
 }
 

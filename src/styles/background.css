@@ -185,15 +185,5 @@ section.faq .faq-shadow2 {
     }
 
     /*DESATIVADOS */
-    
-    section.form {
-        display: none;
-    }
 
-    section.faq {
-        display: none;
-    }
-    footer.footer {
-        display: none;
-    }
 }

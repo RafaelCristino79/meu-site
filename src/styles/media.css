@@ -98,7 +98,75 @@
     
     section.cta .flex {
         text-align: center;
+
     }
+
+    section.form .form-email {
+        flex-direction: column;
+    }
+
+    section.form .flex img {
+        width: 80%;
+    }
+    
+    section.form .flex {
+        justify-content: center;
+
+    }
+
+
+
+    section.form .ebook-form {
+        justify-content: center;
+    }
+
+    section.faq .interface .flex .accordion{
+        max-width: 100%;
+    }
+
+    section.cta-wpp {
+        padding: 40px 5%;
+        margin-top: 70px;
+    }
+
+    section.cta-wpp .flex{
+        gap: 20px;
+    }
+
+    section.cta-wpp .flex .cta-wpp-button{
+        width: 100%;
+    }
+    .cta-wpp-button a {
+        justify-content: center;
+    }
+
+    section.cta-wpp .flex .text-h3 {
+        font-size: 20pt;
+    }
+
+    footer.footer .footer-form .form-email{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    footer.footer .footer-links .footer-containers {
+        flex-direction: column;
+    }
+
+    footer.footer .footer-form {
+    text-align: center;
+    }
+
+    footer.footer .footer-containers {
+        gap: 30px;
+    }
+
+    footer {
+        padding: 50px 10px;
+    }
+    
+    
+
 
     .home-background {
         width: 100%;
@@ -158,6 +226,21 @@
     }
 
     section.map .map-img img {
+        width: 100%;
+    }
+
+    section.form #form-text {
+        width: 100%;
+    }
+
+
+
+    footer.footer .footer-form .form-email {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #form-email-text{
         width: 100%;
     }
 }

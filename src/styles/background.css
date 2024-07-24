@@ -141,10 +141,36 @@ section.faq .faq-shadow2 {
     filter: blur(60px);
 }
 
+@media screen and (max-width:1200px){
+    .horse-shadow {
+        right: 70%;
+        top: 20%;
+    }
+
+    section.rec .rec-bg {
+
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #575562;
+        filter: blur(100px);
+        position: absolute;
+        left: -20%;
+        top:50% ;
+        z-index: -1;
+    }
+
+        section.solution .solution-bg {
+        display: none;
+    }
+
+}
+
 
 @media screen and (max-width: 768px) {
 
     .horse-shadow {
+        display: block;
         right: 70%;
         top: 20%;
         width: 300px;
@@ -157,6 +183,7 @@ section.faq .faq-shadow2 {
     section.faq .faq-shadow2 {
         display: none;
     }
+
 
     /*DESATIVADOS */
 }

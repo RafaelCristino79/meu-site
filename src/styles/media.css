@@ -1,3 +1,149 @@
+@media screen and (max-width: 1200px) {
+    .flex {
+        flex-wrap: wrap;
+        padding: 0 10%;
+    }
+
+    section.home {
+        padding-top: 200px;
+    }
+
+    section.home .home-text {
+        align-items: stretch;
+    }
+
+
+
+    section.priority {
+        margin-top: 0;
+    }
+
+    section.team .flex{
+        justify-content: center;
+    }
+
+
+    
+    section.rec .rec-text {
+        width: 100%;
+    }
+
+    section.rec .flex {
+        justify-content: center;
+    }
+
+    section.rec .rec-img {
+     padding-top: 20px;
+     display: none;
+     text-align: center;
+    }
+
+    section.rec .rec-number-2 {
+        width: 100%;
+    }
+
+    section.map .map-img img {
+        width: 100%;
+    }
+    
+
+    section.form .flex {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    section.form .flex .ebook-form{
+    text-align: center;
+    }
+
+    .form-email {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.form .flex .ebook-form-responsive {
+        display: block;
+        text-align: center;
+    }
+
+    section.form .flex .ebook-form .text-h3-form {
+        display: none;
+    }
+
+    section.form .flex .ebook-form .text-h4-form {
+        display: none;
+    }
+
+
+    section.form #form-text {
+        width: 100%;
+    }
+
+    section.solution .solution-card {
+        width: 100%;
+    }
+
+    section.priority .interface .flex {
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 40px;
+    }
+    section.priority .card{
+        max-width: 100%;
+        padding: 40px;
+        background-color: #0c0c0c;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 8px;
+    }
+
+    section.priority .interface {
+        margin: 0 10%;
+    }
+    
+
+    section.map .flex {
+        flex-direction: column-reverse;
+
+
+    }
+
+    section.map {
+ 
+        padding: 0px 0px 150px 0px;
+    }
+
+    section.map .map-column {
+        flex: none;
+    }
+
+    section.map .interface {
+
+        height: 100%;
+    }
+    
+    
+
+
+    section.faq .interface .flex .accordion{
+        max-width: 100%;
+    }
+
+
+    
+    footer.footer .footer-form .footer-form-email {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #form-email-text{
+        width: 100%;
+    }
+}
+
+
+
 
 @media screen and (max-width: 768px){
 
@@ -5,6 +151,10 @@
 
         padding: 30% 10% 0% 10%;
         gap: 0;
+    }
+
+    section.home {
+        padding-top: 0px;
     }
 
 
@@ -30,6 +180,7 @@
 
     section.map {
         margin: 30px 0px;
+        padding: 20px;
     }
 
     section.map .map-text {
@@ -84,6 +235,9 @@
 
     }
 
+    section.exp{
+        padding:0px;
+    }
 
     section.exp .exp-cards{
         flex-direction: column;
@@ -108,6 +262,16 @@
 
     }
 
+    section.solution {
+  
+        padding: 80px 5%;
+    }
+
+    section.form {
+        background-color: #FFFFFF;
+        margin-top: 0px;
+    }
+
     section.form .form-email {
         flex-direction: column;
     }
@@ -121,10 +285,17 @@
 
     }
 
+    
 
 
     section.form .ebook-form {
         justify-content: center;
+    }
+
+    section.faq {
+        margin-top: 80px;
+        padding: 0px 0px;
+        
     }
 
     section.faq .interface .flex .accordion{
@@ -151,6 +322,18 @@
         font-size: 20pt;
     }
 
+    section.faq {
+        margin-top: 80px;
+ 
+        
+    }
+
+    footer {
+        margin-top: 40px;
+        background-color: #0D0D0D;
+        padding: 40px;
+    }
+
     footer.footer .footer-form .form-email{
         flex-direction: column;
         max-width: 100%;
@@ -172,7 +355,10 @@
         padding: 50px 10px;
     }
     
+    .footer-form-email {
+        flex-direction: column;
     
+    }
 
 
     .home-background {
@@ -227,84 +413,7 @@
 
 }
 
-@media screen and (max-width: 1200px) {
-    .flex {
-        flex-wrap: wrap;
-        padding: 0 10%;
-    }
 
-    section.priority {
-        margin-top: 0;
-    }
-
-    section.team .flex{
-        justify-content: center;
-    }
-
-
-    
-    section.rec .rec-text {
-        width: 100%;
-    }
-
-
-    section.rec .rec-img {
-     padding-top: 20px;
-    }
-
-    section.rec .rec-number-2 {
-        width: 100%;
-    }
-
-    section.map .map-img img {
-        width: 100%;
-    }
-    
-
-    section.form #form-text {
-        width: 100%;
-    }
-
-    section.solution .solution-card {
-        width: 100%;
-    }
-
-    section.priority .interface .flex {
-      justify-content: flex-start;
-    }
-    section.priority .card{
-        max-width: 100%;
-        padding: 20px;
-    }
-
-    section.priority .interface {
-        margin: 0 5%;
-    }
-
-    section.map .flex {
-        flex-direction: column-reverse;
-    }
-
-    section.map .map-column {
-        flex: none;
-    }
-
-
-    section.faq .interface .flex .accordion{
-        max-width: 100%;
-    }
-
-
-
-    footer.footer .footer-form .form-email {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #form-email-text{
-        width: 100%;
-    }
-}
 
 @media screen and (max-width: 400px) {
     .text-h3 {

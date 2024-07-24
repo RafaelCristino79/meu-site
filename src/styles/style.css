@@ -45,6 +45,8 @@ body {
     transition: background-color .3s ease;
 }
 
+
+
 .btn-default-2{
     border: none;
     display: flex;
@@ -73,6 +75,20 @@ body {
 }
 
 .btn-default:hover {
+    background-color: #CE1B1B;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+.btn-default-2:hover {
+    background-color: #CE1B1B;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+.btn-default-cta:hover {
     background-color: #CE1B1B;
     cursor: pointer;
     transform: scale(1.05);
@@ -219,7 +235,7 @@ section.home .home-text span {
     display: flex;
     padding-top: 30px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
 }
 
 
@@ -252,6 +268,7 @@ section.priority .card {
     display: flex;
     flex-direction: column;
     gap: 26px;
+    background-color: transparent;
 }
 
 section.priority .card-text {
@@ -284,8 +301,6 @@ section.map {
     margin: 100px 0px;
     align-items: center;
     justify-content: center;
-
-    
 
 }
 
@@ -407,6 +422,7 @@ section.rec .rec-number-2   {
 
 section.exp{
     margin-top: 100px;
+    padding: 100px 0px;
 }
 section.exp .flex {
     flex-direction: column;
@@ -470,7 +486,8 @@ section.cta .flex .subtitle {
 }
 
 section.solution {
-    margin-top: 80px;
+  
+    padding: 120px 0px;
 }
 
 section.solution .flex {
@@ -565,10 +582,13 @@ section.form {
     background-color: #FFFFFF;
     margin-top: 60px;
 }
-
+section.form .ebook-form-responsive {
+    display: none;
+}
 section.form .flex {
     gap: 80px;
     padding: 40px;
+    
 }
 
 section .ebook-form {
@@ -582,12 +602,15 @@ section .ebook-form {
 
 section.faq {
     margin-top: 80px;
+    padding: 100px 0px;
+    
 }
 
 section.faq .flex {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
 }
 
 .accordion {
@@ -717,8 +740,9 @@ footer.footer .footer-form form {
 }
 
 
-.form-email {
-
+.footer-form-email {
+    display: flex;
+    gap: 8px;
     width: 100%;
     justify-content: center;
 

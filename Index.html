@@ -367,16 +367,16 @@
                     </div>
                     <img src="imgs/ebook-page.png" alt="ebook">
                     <div class="ebook-form">
-                        < class="text-h3-form">Ebook Gratuito</>
+                        <h3 class="text-h3-form">Ebook Gratuito</h3>
                         <h4 class="text-h4-form">o Guia essencial de estruturas empresariais internacionais</h4>
                         <p class="text-p-form">Baixe agora nosso Ebook gratuito e descubra as estratégias utilizadas por investidores e empresários de sucesso para economizar e proteger seus ativos dos riscos nacionais. Aprenda de forma prática e objetiva como as estruturas empresariais internacionais podem revolucionar seu negócio e garantir sua privacidade e segurança financeira.</p>
 
               
-                        <form>
+                        <form onsubmit="redirectToExternalDownload(); return false;">
                             <div class="form-email">
                                 <p><label for="form-text"></label>
                                 <input type="text" id="form-text" name="text" placeholder="Endereço de email" required/></p>
-                                <input type="submit" id="form-submit" value="Adquirir">
+                                <input type="submit" id="form-submit" value="Adquirir" onclick="redirectToExternalDownload()">
                             </div>
                         </form>                              
                     </div>

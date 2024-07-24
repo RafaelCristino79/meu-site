@@ -290,11 +290,13 @@ section.priority .cards-h3 {
 
 section.map .flex {
     gap: 54px;
-
-
 }
 
+section.map .map-title {
+    display: flex;
+    flex-direction: column;
 
+}
 
 section.map {
     background: rgba(23, 23, 23, 0.30);
@@ -313,7 +315,7 @@ section.map .map-img img{
 .map-text {
     display: flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
     padding-top: 80px;
     gap: 16px;
 
@@ -469,7 +471,7 @@ section.exp .exp-cards {
 
 section.cta {
     background: radial-gradient(20.24% 60.13% at 50% 50%, #373738 0%, #252525 100%);
-
+    padding: 0 5%;
 
     margin-top: 20px;
 }

@@ -126,7 +126,21 @@
         height: 100%;
     }
     
+    section.team .team-card:hover {
+        transform: scale(1);
+    }
+
+    section.exp .exp-card:hover {
+        transform: scale(1);
     
+    }
+
+    section.solution .solution-card:hover {
+        transform: scale(1);
+    
+    
+    }
+
     section.cta-wpp .flex {
         gap: 20px;
     }
@@ -378,10 +392,17 @@
     footer {
         padding: 50px 10px;
     }
+
     
     .footer-form-email {
         flex-direction: column;
     
+    }
+
+    .footer-others ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
 
 

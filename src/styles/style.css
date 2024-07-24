@@ -32,6 +32,13 @@ body {
     overflow-x: hidden;
 }
 
+#navbar ul li a {
+    padding: 6px;
+}
+#navbar ul li a:hover {
+    border-bottom: solid 2px red;
+}
+
 .btn-default {
     border: none;
     display: flex;
@@ -349,8 +356,12 @@ section.team .interface .flex {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    transition: ease-in-out 0.2s;
 }
 
+.team-card:hover {
+    transform: scale(1.05);
+}
 
 .team-card-img1 {
     width: 100%;
@@ -454,6 +465,12 @@ section.exp .exp-cards {
     border-radius: 15px;
     background: #2F2F2F;
     box-shadow: 0px 10px #080808;
+    transition: ease-in-out 0.2s;
+
+}
+
+.exp-card:hover {
+    transform: scale(1.05);
 
 }
 
@@ -508,6 +525,12 @@ section.solution .flex {
     padding: 20px;
 }
 
+.solution-card:hover {
+    transform: scale(1.06);
+
+
+}
+
 .solution-card {
     display: flex;
     flex-direction:column;
@@ -517,6 +540,7 @@ section.solution .flex {
     height: 210px;
     border-radius: 12px;
     gap: 10px;
+    transition: ease-in-out 0.2s;
 }
 
 .solution-card h5 {
@@ -638,6 +662,10 @@ section.faq .flex {
     padding: 16px;
     border-radius: 8px;
     
+}
+
+.accordion-header:hover {
+    background-color: #242323;
 }
 
 .accordion-body {
@@ -781,16 +809,6 @@ footer.footer .footer-form form {
     background: #cf1d1d;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .footer-logo {

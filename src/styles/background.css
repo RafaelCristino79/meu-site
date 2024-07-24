@@ -144,46 +144,10 @@ section.faq .faq-shadow2 {
 
 @media screen and (max-width: 768px) {
 
-    
     .horse-shadow {
-        display: none;
+        right: 70%;
+        top: 500px;
     }
-    
-    .circle {
-        display: none;
-    }
-    
-    
-    section.ux .btc-right {
-        display: none;
-    
-    }
-    
-    section.ux .btc-left {
-        display: none;
-    
-    }
-    
-    section.rec .boat-shadow {
-        display: none;
-    
-    }
-    
-    
-    section.rec .rec-bg {
-        display: none;
-
-    }
-
-    
-    section.exp .exp-bg {
-       display: none;
-    }
-
-    section.solution .solution-bg {
-        display: none;
-    }
-    
     section.faq .faq-shadow1 {
         display: none;
     }

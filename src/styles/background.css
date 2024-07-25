@@ -187,9 +187,14 @@ section.faq .faq-shadow2 {
         top: 40%;
         filter: blur(60px);
     }
-
 }
 
+
+/*página ebook */ 
+section.success {
+    overflow: hidden;
+    position: relative;
+}
 
 @media screen and (max-width: 768px) {
 

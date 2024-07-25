@@ -447,6 +447,14 @@
         line-height: 24pt;
     }
 
+    section.success .interface {
+        padding-top: 160px;
+    }
+    
+    section.success .text-h1 {
+        line-height: 1;
+    }
+
     @keyframes flutuar {
 
         from {

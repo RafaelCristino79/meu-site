@@ -30,24 +30,30 @@ section.home {
     z-index: -1;
 }
 
-section.ux {
+section.priority {
     position: relative;
-    overflow: hidden;
+
 }
 
-section.ux .btc-right {
+section.priority .btc-right {
     filter: grayscale(1);
     position: absolute;
-    right: -100px;
+    right: 0px;
+    top: -200px;
+    z-index: -1;
+
 
 }
 
-section.ux .btc-left {
+section.priority .btc-left {
     filter: grayscale(1);
     position: absolute;
-    left: -400px;
+    left: -300px;
+    top: -200px;
+    z-index: -1;    
 
 }
+
 
 section.rec .boat-shadow {
     position: absolute;
@@ -196,6 +202,19 @@ section.success {
     position: relative;
 }
 
+@media screen and (max-width:1280px) {
+    section.priority .btc-right {
+        display: none;
+    
+    
+    }
+    
+    section.priority .btc-left {
+        display: none;
+    
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .horse-shadow {
@@ -212,6 +231,7 @@ section.success {
     section.faq .faq-shadow2 {
         display: none;
     }
+
 
 
     /*DESATIVADOS */

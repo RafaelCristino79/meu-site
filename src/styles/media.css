@@ -84,9 +84,7 @@
         width: 100%;
     }
 
-    section.solution .solution-card {
-        width: 100%;
-    }
+
 
     section.priority .interface .flex {
       justify-content: flex-start;
@@ -297,6 +295,10 @@
     section.solution {
   
         padding: 80px 5%;
+    }
+
+    section.solution .solution-card {
+        width: 100%;
     }
 
     section.form {

@@ -18,10 +18,4 @@ accordions.forEach(accordion => (
 ))
 
 
-function redirectToExternalDownload() {
-    // Link para o arquivo externo
-    var externalDownloadLink = "https://drive.usercontent.google.com/download?id=1Nr1ga8pGj3Y4IuRxmCMx0EoKpqVu0CRr&export=download";
-    
-    // Redireciona o navegador para o link de download externo
-    window.location.href = externalDownloadLink;
-  }
+

@@ -39,6 +39,12 @@ body {
     border-bottom: solid 2px red;
 }
 
+#navbar.transparent {
+    background-color: rgba(0, 0, 0, 0.281); /* Cor transparente ao rolar para baixo */
+    backdrop-filter: blur(15px); /* Desfoque do fundo */
+    border-bottom: none;
+}
+
 .btn-default {
     border: none;
     display: flex;

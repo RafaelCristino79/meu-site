@@ -346,6 +346,7 @@ section.map .map-img img{
 
 section.team .interface .flex {
     gap: 25px;
+    justify-content: center;
 
 }
 
@@ -434,7 +435,7 @@ section.rec .rec-number-2   {
 }
 
 section.exp{
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 100px 0px;
 }
 section.exp .flex {
@@ -466,6 +467,7 @@ section.exp .exp-cards {
     background: #2F2F2F;
     box-shadow: 0px 10px #080808;
     transition: ease-in-out 0.2s;
+    max-width: 300px;
 
 }
 
@@ -643,8 +645,6 @@ section.faq .flex {
     display: flex;
     flex-direction: column;
     width: 850px;
-
-
     border-radius: 8px;
 
     cursor: pointer;
@@ -675,6 +675,11 @@ section.faq .flex {
     overflow: hidden;
     transition: opacity .3s;
 
+
+}
+
+.accordion span {
+    text-align: left;
 }
 
 .accordion-body.active {

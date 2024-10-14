@@ -69,3 +69,28 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = scrollTop;
 });
+
+
+//accordion
+
+// Seleciona todos os cabeçalhos do acordeão
+const accordions = document.querySelectorAll('.accordion-header');
+
+accordions.forEach(accordion => {
+  accordion.addEventListener('click', function() {
+    // Seleciona o corpo do acordeão relacionado
+    const body = this.nextElementSibling;
+
+    // Alterna a classe "active" no corpo do acordeão
+    body.classList.toggle('active');
+
+    // Fecha os outros itens do acordeão ao abrir um novo
+    accordions.forEach(item => {
+      const otherBody = item.nextElementSibling;
+      if (otherBody !== body) {
+        otherBody.classList.remove('active');
+      }
+    });
+  });
+});
+

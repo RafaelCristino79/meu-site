@@ -2,16 +2,45 @@ const btnmobile = document.querySelector(".btn-mobile");
 const menumobile = document.querySelector(".nav_list");
 const body = document.body; // Seleciona o body para controlar o scroll
 const menuItems = document.querySelectorAll(".nav_list a"); // Seleciona os links do menu
+const navbar = document.getElementById("navbar");
+let isMenuOpen = false; // Flag para saber se o menu está aberto
+let lastScrollTop = 0; // Controle do scroll
 
+// Adiciona uma transição suave para a navbar
+navbar.style.transition = "top 0.3s ease"; // Transição suave de 0.3s ao alterar a propriedade 'top'
+
+// Função que lida com o scroll quando o menu está fechado
+function handleScroll() {
+    if (isMenuOpen) return; // Se o menu estiver aberto, não faz nada
+
+    let scrollTop = window.pageYOffset;
+
+    // Ocultar navbar ao rolar para baixo e mostrar ao rolar para cima
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-100px"; // Esconde a navbar com transição suave
+    } else {
+        navbar.style.top = "0"; // Mostra a navbar com transição suave
+    }
+
+    lastScrollTop = scrollTop;
+}
+
+// Evento de clique no botão do menu mobile
 btnmobile.addEventListener("click", () => {
     btnmobile.classList.toggle('active');    
     menumobile.classList.toggle('active');
-    
+    isMenuOpen = menumobile.classList.contains('active'); // Atualiza o status do menu
+
     // Bloqueia ou desbloqueia o scroll quando o menu estiver ativo
-    if (menumobile.classList.contains('active')) {
+    if (isMenuOpen) {
         body.style.overflow = 'hidden'; // Bloqueia o scroll
+        navbar.style.top = "0"; // Garante que a navbar fique visível ao abrir o menu
+        navbar.style.position = "fixed"; // Fixa a navbar no topo
+        window.removeEventListener("scroll", handleScroll); // Desabilita o scroll enquanto o menu está aberto
     } else {
         body.style.overflow = ''; // Restaura o scroll
+        navbar.style.position = ""; // Restaura o comportamento normal da navbar
+        window.addEventListener("scroll", handleScroll); // Habilita o scroll quando o menu fecha
     }
 });
 
@@ -21,6 +50,8 @@ document.addEventListener('click', (e) => {
         menumobile.classList.remove('active');
         btnmobile.classList.remove('active');
         body.style.overflow = ''; // Restaura o scroll quando o menu fecha
+        isMenuOpen = false; // Atualiza o status do menu
+        window.addEventListener("scroll", handleScroll); // Reativa o scroll
     }
 });
 
@@ -30,45 +61,18 @@ menuItems.forEach(item => {
         menumobile.classList.remove('active');
         btnmobile.classList.remove('active');
         body.style.overflow = ''; // Restaura o scroll quando o menu fecha
+        isMenuOpen = false; // Atualiza o status do menu
+        window.addEventListener("scroll", handleScroll); // Reativa o scroll
     });
 });
-
-
-
-
 
 // Verifica se a tela é de um dispositivo móvel
 function isMobile() {
     return window.matchMedia("(max-width: 768px)").matches;
 }
 
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
-
-// Adiciona uma transição suave para a navbar
-navbar.style.transition = "top 0.3s ease";
-
-// Manipula o evento de scroll
-window.addEventListener("scroll", function() {
-    let scrollTop = window.pageYOffset;
-
-    if (scrollTop > lastScrollTop) {
-        // Scroll para baixo - esconder navbar
-        navbar.style.top = isMobile() ? "-100px" : "-100px";
-    } else {
-        // Scroll para cima - mostrar navbar
-        navbar.style.top = "0";
-    }
-
-    // Alternar entre a classe transparente e a sólida dependendo da posição do scroll
-    if (scrollTop > 0) {
-        navbar.classList.add("transparent");
-    } else {
-        navbar.classList.remove("transparent");
-    }
-
-    lastScrollTop = scrollTop;
-});
+// Adiciona o evento de scroll inicialmente
+window.addEventListener("scroll", handleScroll);
 
 
 //accordion

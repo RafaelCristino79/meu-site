@@ -35,14 +35,40 @@ body {
 #navbar ul li a {
     padding: 6px;
 }
-#navbar ul li a:hover {
-    border-bottom: solid 2px red;
+
+nav#navbar ul li a {
+    position: relative;
 }
+
+nav#navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Começa do lado esquerdo do link */
+    bottom: 0; /* Alinha na parte inferior do link */
+    width: 0; /* Começa com largura zero */
+    height: 3px; /* Altura da linha */
+    border-radius: 20px;
+    background-color: #b92222; /* Cor da linha */
+    transition: width 0.2s ease-in; /* Animação suave */
+}
+
+nav#navbar ul li a:hover::after {
+    width: 50%; /* Largura total do link */
+}
+
 
 #navbar.transparent {
     background-color: rgba(0, 0, 0, 0.281); /* Cor transparente ao rolar para baixo */
     backdrop-filter: blur(15px); /* Desfoque do fundo */
     border-bottom: none;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-item i {
+    display: none;
 }
 
 .btn-default {
@@ -224,8 +250,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    padding: 0px 20px;
-    
+
 }
 
 section.home .flex{

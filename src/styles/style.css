@@ -63,13 +63,22 @@ nav#navbar ul li a:hover::after {
     border-bottom: none;
 }
 
-.nav-list-mobile {
+.icon-mobile {
     display: none;
 }
 
-.nav-item i {
+#navbar .nav_list .nav-item i {
     display: none;
 }
+
+@media screen and (max-width: 900px) {
+
+    #navbar .nav_list .nav-item i {
+        display: block;
+    }
+}
+
+
 
 .btn-default {
     border: none;

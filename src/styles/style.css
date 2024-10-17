@@ -384,21 +384,25 @@ section.map .map-img img{
 section.team .interface .flex {
     gap: 25px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section.team .interface .flex a{
     text-decoration: none;
+
 }
 
 .team-card {
 
-    width: 300px;
+    max-width: 350px;
     height: 100%;
     background-color: #181818;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     transition: ease-in-out 0.2s;
+    border: 1px solid rgb(43, 43, 43);
+    
 }
 
 .team-card:hover {
@@ -419,9 +423,17 @@ section.team .interface .flex a{
     gap: 20px;
 }
 
+.team-card-text h4 {
+
+    font-size: 14pt;
+    font-weight: 600;
+}
+
 .team-card-text p {
-    color: #BABABA;
-    font-weight: 400;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 11pt;
+    line-height: 1.5;
 }
 
 .cards-h1 {
@@ -497,8 +509,8 @@ section.exp .exp-title .subtitle {
 
 section.exp .exp-cards {
     display: flex;  
+    margin-top: 80px;
     gap: 20px;
-    padding: 60px;
 }
 
 .exp-card {
@@ -506,9 +518,8 @@ section.exp .exp-cards {
     flex-direction: column;
     border-radius: 15px;
     background: #2F2F2F;
-    box-shadow: 0px 10px #080808;
     transition: ease-in-out 0.2s;
-    max-width: 300px;
+    max-width: 375px;
 
 }
 

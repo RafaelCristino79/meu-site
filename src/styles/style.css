@@ -404,6 +404,10 @@ section.team .interface .flex a{
     margin: 0 60px 35px;
 }
 
+.swiper-wrapper {
+    display: flex;
+}
+
 
 section.team .interface .flex {
     z-index: 0;
@@ -427,7 +431,7 @@ section.team .interface .flex {
 
 .team-card {
     user-select: none;
-    height: 80vh;
+    height: 700px;
     background-color: #181818;
     display: flex;
     flex-direction: column;

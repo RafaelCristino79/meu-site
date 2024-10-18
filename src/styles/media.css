@@ -264,6 +264,10 @@
         justify-content: center;
 
     }
+    .card-wrapper {
+        margin: 0 0px 0px;
+    }
+
 
     section.exp{
         padding:0px;

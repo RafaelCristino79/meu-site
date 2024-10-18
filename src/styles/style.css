@@ -32,6 +32,10 @@ body {
     overflow-x: hidden;
 }
 
+#navbar {
+    z-index: 1000;
+}
+
 #navbar ul li a {
     padding: 6px;
 }
@@ -381,6 +385,7 @@ section.map .map-img img{
 }
 
 
+
 section.team .interface .flex {
     gap: 25px;
     justify-content: center;
@@ -392,10 +397,37 @@ section.team .interface .flex a{
 
 }
 
-.team-card {
+.card-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 0 60px 35px;
+}
 
-    max-width: 350px;
-    height: 100%;
+
+section.team .interface .flex {
+    z-index: 0;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff !important; 
+    border-radius: 50%;
+    width: 10px ; 
+    height: 40px;
+    
+}
+
+
+.swiper-pagination-bullet {
+    background-color: #ffffff !important;
+}
+
+
+.team-card {
+    user-select: none;
+    height: 80vh;
     background-color: #181818;
     display: flex;
     flex-direction: column;

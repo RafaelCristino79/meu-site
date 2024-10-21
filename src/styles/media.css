@@ -537,7 +537,7 @@
 
     .interface {
         margin: 0 auto;
-        max-width: 50vw;
+        max-width: 60vw;
     }
 
     .home-img {
@@ -862,4 +862,5 @@
         line-height: 1;
    
 
+}
 }

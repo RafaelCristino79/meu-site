@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/javascript/script.js" defer></script>
+    <script src="src/javascript/script.js?v=15.0" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/media.css">
+    <link rel="stylesheet" href="src/styles/style.css?v=15.0">
+    <link rel="stylesheet" href="src/styles/header.css?v=15.0">
+    <link rel="stylesheet" href="src/styles/media.css?v=15.0">
     <link rel="stylesheet" href="src/styles/keyframes.css">
     <link rel="stylesheet" href="src/styles/background.css">
+    <link rel="stylesheet" href="src/styles/modals.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="html" href="nl-success.html">
@@ -24,7 +25,7 @@
     <!-- Início - Navbar ... Aqui temos o cabeçalho da página para desktop-->
     <header>
         <nav id="navbar">
-          <a href="#"> <img src="https://i.postimg.cc/sXBF1g6C/Logo.png" id="nav-logo"></a>
+          <a href="#"> <img src="imgs/logo.svg" id="nav-logo"></a>
             <ul class="nav_list">
                 <li class="nav-item" >
                     <i class="fa-solid fa-house"></i>
@@ -174,53 +175,137 @@
         <section class="team">
             <div class="interface">
                 <div class="flex swiper">
-                    <div class="card-wrapper">
+                    <div class="card-wrapper1">
 
                         <div class="swiper-wrapper">
 
-                            <a href="https://www.instagram.com/boaz.adv/" target="_blank" class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="team-card">
                                     <img class="team-card-img1" src="imgs/Boaz.png">
                                     <div class="team-card-text">
                                         <h4>Boaz Bezerra</h4>
-                                        <p>
-                                            Especialista em Direito e Tecnologia pela POLI-USP/São Paulo, com mais de 10 anos de experiência como advogado, focado na otimização fiscal e na internacionalização de empresas. Além disso, possui ampla atuação no setor de criptoativos, tecnologia e blockchain, oferecendo suporte estratégico para negócios que buscam expandir suas operações, maximizar a eficiência tributária e adotar soluções inovadoras nesses mercados emergentes.</p>
+                                        <button id="btn-modal-1">Saiba mais</button>
+                                        <!--
+                                        <p> Especialista em Direito e Tecnologia pela POLI-USP/São Paulo, com mais de 10 anos de experiência como advogado, focado na otimização fiscal e na internacionalização de empresas. Além disso, possui ampla atuação no setor de criptoativos, tecnologia e blockchain, oferecendo suporte estratégico para negócios que buscam expandir suas operações, maximizar a eficiência tributária e adotar soluções inovadoras nesses mercados emergentes.</p>
+                                        -->
+                                      
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/viniciusamborges/" target="_blank" class="swiper-slide">
-                            <div class="team-card">
-                                <img class="team-card-img1" src="imgs/Vinicius.png">
-                                <div class="team-card-text">
-                                    <h4>Vinícius Borges</h4>
-                                    <p>Empresário, Venture Builder e Advogado especializado em Negócios, com uma vasta experiência em Sistemas Financeiros e no Setor Bancário. Dedica-se a desenvolver soluções estratégicas e inovadoras, focadas na otimização das operações empresariais. Seu trabalho visa não apenas fortalecer o ecossistema financeiro, mas também garantir que as empresas estejam preparadas para enfrentar os desafios e aproveitar as oportunidades do mercado atual. </p>
                                 </div>
                             </div>
 
-                            <a href="#" target="_blank" class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="team-card">
-                                    <img class="team-card-img1" src="imgs/Alice.png">
+                                    <img class="team-card-img1" src="imgs/Vinicius.png">
+                                    <div class="team-card-text">
+                                        <h4>Vinícius Borges</h4>
+                                        <button id="btn-modal-2">Saiba mais</button>
+                                        
+                                        <!--
+                                        <p>Empresário, Venture Builder e Advogado especializado em Negócios, com uma vasta experiência em Sistemas Financeiros e no Setor Bancário. Dedica-se a desenvolver soluções estratégicas e inovadoras, focadas na otimização das operações empresariais. Seu trabalho visa não apenas fortalecer o ecossistema financeiro, mas também garantir que as empresas estejam preparadas para enfrentar os desafios e aproveitar as oportunidades do mercado atual. </p>  
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <img class="team-card-img1" src="imgs/Alice1.png">
                                     <div class="team-card-text">
                                         <h4>Alice Gomes Rayol</h4>
+                                        <button id="btn-modal-3">Saiba mais</button>
+
+                                        <!--
                                         <p>Advogada com experiência em Direito Civil desde 2019. Possui experiência em Direito Previdenciário, de Família, Tributário e Societário. Formação: Bacharel em Direito (UFRRJ), pós-graduada em Direito do Trabalho e Previdenciário (PUC Minas) e Direito Civil e Processual Civil (LEGALE). Especializações na FGV e LF Empreendimentos.</p>
+                                         -->
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                             
-                            <a href="#" target="_blank" class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="team-card">
-                                    <img class="team-card-img1" src="imgs/Bianca.png">
+                                    <img class="team-card-img1" src="imgs/Bianca1.png">
                                     <div class="team-card-text">
                                         <h4>Bianca Marques Leite</h4>
+                                        <button id="btn-modal-4">Saiba mais</button>
+                                         <!--
                                         <p>Advogada especializada em Direito Tributário, com experiência desde 2017. Atuou na Procuradoria da Fazenda Nacional, focando na defesa da União em execuções fiscais e na recuperação de ativos. Conciliadora no CEJUSC da Justiça Federal, aplicou técnicas de mediação e gestão de conflitos. Formação: Bacharel em Direito (AEVSF), pós-graduada em Direito Público (FAR) e em Direito Público e Empresarial (LEGALE).</p>
+                                         -->
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+
+
+                        <dialog id="dialog-1">
+                            <div class="team-modal">
+                                <div class="img">
+                                    <img src="imgs/Boaz.png" alt="">
+                                </div>
+                                <div class="desc-team">
+                                    <i class="fa-solid fa-xmark" id="close-modal"></i>
+                                    <h1>Boaz Bezerra</h1>
+                                    <p>Especialista em Direito e Tecnologia pela POLI-USP/São Paulo, com mais de 10 anos de experiência como advogado, focado na otimização fiscal e na internacionalização de empresas.</p>
+                                    <button>Falar com advogado</button>
+                                    <div class="social-media">
+                                        <a href="https://www.instagram.com/boaz.adv" target="_blank"><i class="fa-brands fa-instagram" id="social-icon"></i></a>
+                                        <a href="https://www.linkedin.com/in/weboaz/" target="_blank"><i class="fa-brands fa-linkedin" id="social-icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+
+                        
+                        <dialog id="dialog-2">
+                            <div class="team-modal">
+                                <div class="img">
+                                    <img src="imgs/Vinicius.png" alt="">
+                                </div>
+                                <div class="desc-team">
+                                    <i class="fa-solid fa-xmark" id="close-modal2"></i>
+                                    <h1>Vinicius Borges</h1>
+                                    <p>Empresário, Venture Builder e Advogado especializado em Negócios, com uma vasta experiência em Sistemas Financeiros e no Setor Bancário. Dedica-se a desenvolver soluções estratégicas e inovadoras, focadas na otimização das operações empresariais.</p>
+                                    <button>Falar com advogado</button>
+                                    <div class="social-media">
+                                        <a href="https://www.instagram.com/viniciusamborges/" target="_blank"><i class="fa-brands fa-instagram" id="social-icon"></i></a>
+                                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-borges-273467137/" target="_blank"><i class="fa-brands fa-linkedin" id="social-icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+
+                              
+                        <dialog id="dialog-3">
+                            <div class="team-modal">
+                                <div class="img">
+                                    <img src="imgs/Alice1.png" alt="">
+                                </div>
+                                <div class="desc-team">
+                                    <i class="fa-solid fa-xmark" id="close-modal3"></i>
+                                    <h1>Alice Gomes Rayol</h1>
+                                    <p>Advogada com experiência em Direito Civil desde 2019. Possui experiência em Direito Previdenciário, de Família, Tributário e Societário. Formação: Bacharel em Direito (UFRRJ), pós-graduada em Direito do Trabalho e Previdenciário (PUC Minas) e Direito Civil e Processual Civil (LEGALE). Especializações na FGV e LF Empreendimentos.</p>
+                                    <button>Falar com advogado</button>
+                                </div>
+                            </div>
+                        </dialog>
+
+                        <dialog id="dialog-4">
+                            <div class="team-modal">
+                                <div class="img">
+                                    <img src="imgs/Bianca1.png" alt="">
+                                </div>
+                                <div class="desc-team">
+                                    <i class="fa-solid fa-xmark" id="close-modal4"></i>
+                                    <h1>Bianca Marques Leite</h1>
+                                    <p>Advogada especializada em Direito Tributário, com experiência desde 2017. Atuou na Procuradoria da Fazenda Nacional, focando na defesa da União em execuções fiscais e na recuperação de ativos. Conciliadora no CEJUSC da Justiça Federal, aplicou técnicas de mediação e gestão de conflitos. Formação: Bacharel em Direito (AEVSF), pós-graduada em Direito Público (FAR) e em Direito Público e Empresarial (LEGALE).</p>
+                                    <button>Falar com advogado</button>
+                                </div>
+                            </div>
+                        </dialog>
+
                     </div>
-                    <div class="swiper-side-button swiper-pagination"></div>
-                    <div class="swiper-side-button swiper-button-prev"></div>
-                    <div class="swiper-side-button swiper-button-next"></div>
+                    <div class="swiper-side-button swiper-pagination" id="pagination1"></div>
+                    <div class="swiper-side-button swiper-button-prev" id="prev1"></div>
+                    <div class="swiper-side-button swiper-button-next" id="next1"></div>
                 </div>
                 
            
@@ -228,15 +313,17 @@
 
         </section>
 
+      
+        <!--
         <section class="rec">
-            <!--Background-->
+
             <div class="boat-shadow"></div>
             <div class="rec-bg"></div>
-            <!--fim-Background-->
+    
             <div class="interface">
                 <div class="flex">
 
-                    <!--Texto-->
+        
 
                     <div class="rec-text">
                         <div class="rec-title">
@@ -260,55 +347,108 @@
                         <p>Com uma história de vitórias significativas e uma rede global de contatos, possuímos o conhecimento e a experiência para navegar pelos desafios legais da internacionalização. </p>
                     </div>
 
-                    <!--Fim Texto-->
+         
 
-                    <!--Imagem-->
                     <div class="rec-img">
                         <img src="imgs/Boat.png" alt="Imagem de um barco">
                     </div>
 
-                     <!--Fim Imagem-->
     
                 </div>
             </div>
         </section>
        
+    -->
 
         <section class="exp">
             <div class="exp-bg"></div>
             <div class="interface">
-                <div class="flex">
+                <div class="flex swiper" id="swiper2">
+                    <div class="swiper-side-button swiper-button-prev" id="prev2"></div>
+                    <div class="swiper-side-button swiper-button-next" id="next2"></div>
                     <div class="exp-title">
                         <p class="subtitle">Experiência diversificada</h3>
-                        <h3 class="text-h3">Quem Atendemos</h3>
+                        <h3 class="text-h3">Conheça nossas especialidades</h3>
                     </div>
 
                     <div class="exp-cards">
-                        <div class="exp-card">
-                            <img src="imgs/card-exp1.png" style="max-width: 100%;">
-                            <div class="exp-card-txt">
-                                <h4 class="text-h4">Investidores</h4>
-                                <p class="text-p">Investidores que buscam proteger seu patrimônio em jurisdições mais favoráveis e aumentar sua privacidade através de estruturas internacionais.</p>
-                            </div>
-                        </div>
+                            <div class="card-wrapper2" id="carrossel2">
+                                <div class="swiper-wrapper">
+                                    <div class="exp-card swiper-slide" >
+                                        <img src="imgs/card-exp1.png" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Estruturação de empresas tradicionais e de tecnologia</h4>
+                                        </div>
+                                    </div>
 
-                        <div class="exp-card">
-                            <img src="imgs/card-exp2.png" style="max-width: 100%;">
-                            <div class="exp-card-txt">
-                                <h4 class="text-h4">Empresários</h4>
-                                <p class="text-p">Por meio de nossas estruturas empresariais inteligentes, é possível otimizar os custos tributários, aumentar a confidencialidade do seu negócio e proteger-se dos riscos associados ao ambiente de negócios no Brasil.</p>
-                            </div>
-                        </div>
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/card-exp2.png" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Consultoria e acessoria empresarial</h4>
+                                        </div>
+                                    </div>
 
-                        <div class="exp-card">
-                            <img src="imgs/card-exp3.png" style="max-width: 100%;">
-                            <div class="exp-card-txt">
-                                <h4 class="text-h4">Influenciadores</h4>
-                                <p class="text-p">Nossas estruturas empresariais ajudam influenciadores a aumentar sua privacidade por meio da internacionalização, proporcionando proteção e segurança para suas atividades.</p> 
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/card-exp3.png" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Consultoria e acessoria tributária</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/compliance.jpg" width="100%" height="60%"> 
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Compliance</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/contrato.jpg" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Contratos</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/penal-economico.jpg" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Penal econômico</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/mercado-capitais.jpg" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Mercado de capitais</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/offshore.png" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Estruturas internacionais (offshore/trusts)</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/planejamento.jpg" width="100%"  height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Planejamento patrimonial e sucessório</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="exp-card swiper-slide">
+                                        <img src="imgs/parecer.webp" width="100%" height="60%">
+                                        <div class="exp-card-txt">
+                                            <h4 class="text-h4">Parecer</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
+         
             </div>
         </section>
 
@@ -520,7 +660,7 @@
                     <hr>
                     <div class="footer-containers">
                         <div class="footer-logo">
-                            <img src="imgs/logo.png" alt="Logo Bezerra Borges Advogados">
+                            <img src="imgs/logo.svg" alt="Logo Bezerra Borges Advogados">
                             <p class="text-p">Escritório especializado em direito internacional e empresarial.</p>
                         </div>
 

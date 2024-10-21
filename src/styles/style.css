@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
     background-color: rgb(54, 54, 54);
     
 
@@ -25,15 +25,19 @@
 
 }
 
-
+html.no-scroll {
+    overflow: hidden;
+}
 
 body {
     background-color: black;
     overflow-x: hidden;
 }
 
+
+
 #navbar {
-    z-index: 1000;
+    z-index: 2000;
 }
 
 #navbar ul li a {
@@ -94,6 +98,23 @@ nav#navbar ul li a:hover::after {
     transition: background-color .3s ease;
 }
 
+
+button {
+    color: #ffffff;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(224, 19, 19);
+    border: 0px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+}
 
 
 .btn-default-2{
@@ -162,11 +183,10 @@ nav#navbar ul li a:hover::after {
 }
 
 .text-h4 {
-    font-size: 23px;
-    font-weight: 200;
-    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
     color: #CBCBCB;
-    letter-spacing: 0.48px;
 }
 
 .text-h3 {
@@ -249,6 +269,7 @@ nav#navbar ul li a:hover::after {
     border-radius: 40px;
 }
 
+
 /* Estilo de interface responsivo */
 
 .interface {
@@ -263,11 +284,17 @@ nav#navbar ul li a:hover::after {
 
 }
 
+section.home {
+    height: 100vh;
+}
+
 section.home .flex{
     align-items: center;
     justify-content: center;
     gap: 60px;
+    height: 70vh;
 }
+
 
 section.home .home-text span {
     color: #FF3D3D;
@@ -397,15 +424,26 @@ section.team .interface .flex a{
 
 }
 
-.card-wrapper {
+.card-wrapper1 {
     max-width: 100%;
     overflow: hidden;
     padding: 20px 10px;
     margin: 0 60px 35px;
 }
 
+.card-wrapper2 {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 0 60px 35px;
+
+}
+
+
+
 .swiper-wrapper {
     display: flex;
+    padding: 0;
 }
 
 
@@ -431,7 +469,6 @@ section.team .interface .flex {
 
 .team-card {
     user-select: none;
-    height: 700px;
     background-color: #181818;
     display: flex;
     flex-direction: column;
@@ -457,6 +494,7 @@ section.team .interface .flex {
     padding: 25px;
     padding-bottom: 44px;
     gap: 20px;
+    text-align: center;
 }
 
 .team-card-text h4 {
@@ -529,6 +567,12 @@ section.exp{
 }
 section.exp .flex {
     flex-direction: column;
+
+
+}
+
+section.exp{
+    z-index: 0;
 }
 
 section.exp .exp-title{
@@ -545,17 +589,22 @@ section.exp .exp-title .subtitle {
 
 section.exp .exp-cards {
     display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 80px;
     gap: 20px;
+    max-width: 100%;
+    min-width: 100%;
+
 }
 
 .exp-card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background: #2F2F2F;
+    background: #141414;
     transition: ease-in-out 0.2s;
-    max-width: 375px;
+    justify-content: center;
 
 }
 
@@ -573,14 +622,18 @@ section.exp .exp-cards {
     padding: 10%;
     display: flex;
     flex-direction: column;
-    gap: 20px;    
+    text-align: center;
+    gap: 20px;
+}
+
+.exp-card i {
+    font-size: 25pt;
 }
 
 section.cta {
     background: radial-gradient(20.24% 60.13% at 50% 50%, #373738 0%, #252525 100%);
     padding: 0 5%;
 
-    margin-top: 20px;
 }
 
 section.cta .flex {

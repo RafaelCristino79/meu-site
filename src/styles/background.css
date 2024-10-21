@@ -97,7 +97,7 @@ section.exp .exp-bg {
     background-color: #35353b;
     position: absolute;
     z-index: -1;
-    top: 200px;
+    top: 700px;
     left: 40%;
     filter: blur(100px);
 }

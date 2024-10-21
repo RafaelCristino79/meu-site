@@ -98,22 +98,25 @@ accordions.forEach(accordion => {
   });
 });
 
-new Swiper('.card-wrapper', {
+
+//Carrossel de imagens - Equipe
+
+new Swiper('.card-wrapper1', {
     // Optional parameters
     loop: true,
     spaceBetween: 10,
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '#pagination1',
       clickable: true,
       dynamicBullets: true
     },
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '#next1',
+      prevEl: '#prev1',
     },
 
     breakpoints: {
@@ -129,3 +132,105 @@ new Swiper('.card-wrapper', {
     }
   
   });
+
+  //
+
+// Instância do segundo carrossel
+new Swiper('#carrossel2', {
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+        el: '#pagination2', // Paginação específica do segundo carrossel
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '#next2', // Botões de navegação específicos do segundo carrossel
+        prevEl: '#prev2',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    }
+});
+
+
+
+  //Modal equipe - 1
+
+  const button = document.querySelector("#btn-modal-1")
+  const modal = document.querySelector("#dialog-1")
+  const buttonClose = document.querySelector("#close-modal")
+
+  button.onclick = function () {
+    modal.showModal()
+    modal.scrollTop = 0;
+    document.documentElement.classList.add("no-scroll")
+  }
+
+  buttonClose.onclick = function () {
+    modal.close()
+    document.documentElement.classList.remove("no-scroll")
+  }
+
+
+  //Modal equipe - 2
+
+  const button2 = document.querySelector("#btn-modal-2")
+  const modal2 = document.querySelector("#dialog-2")
+  const buttonClose2 = document.querySelector("#close-modal2")
+
+  button2.onclick = function () {
+    modal2.showModal()
+    modal2.scrollTop = 0;
+    document.documentElement.classList.add("no-scroll")
+  }
+
+  buttonClose2.onclick = function () {
+    modal2.close()
+    document.documentElement.classList.remove("no-scroll")
+  }
+
+
+   //Modal equipe - 3
+
+   const button3 = document.querySelector("#btn-modal-3")
+   const modal3 = document.querySelector("#dialog-3")
+   const buttonClose3 = document.querySelector("#close-modal3")
+ 
+   button3.onclick = function () {
+     modal3.showModal()
+     modal3.scrollTop = 0;
+     document.documentElement.classList.add("no-scroll")
+   }
+ 
+   buttonClose3.onclick = function () {
+     modal3.close()
+     document.documentElement.classList.remove("no-scroll")
+   }
+
+
+
+    //Modal equipe - 4
+
+    const button4 = document.querySelector("#btn-modal-4")
+    const modal4 = document.querySelector("#dialog-4")
+    const buttonClose4 = document.querySelector("#close-modal4")
+  
+    button4.onclick = function () {
+      modal4.showModal()
+      modal4.scrollTop = 0;
+      document.documentElement.classList.add("no-scroll")
+    }
+  
+    buttonClose4.onclick = function () {
+      modal4.close()
+      document.documentElement.classList.remove("no-scroll")
+    }

@@ -1,0 +1,72 @@
+
+dialog {
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move o diálogo para o centro */
+    position: fixed;
+    color:#ffffff;
+    background: linear-gradient(to left, #111111, #000000);
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 12px;
+    width: 50%;
+    height: 50%;
+    padding: 70px 20px;
+
+}
+
+dialog::backdrop {
+    background-color:#0b0b0b7a;
+}
+
+dialog .team-modal {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog .img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+dialog h1 {
+    color: #ffffff;
+}
+
+.desc-team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.desc-team p {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.desc-team i {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+#social-icon {
+    position: static;
+    font-size: 20pt;
+}
+

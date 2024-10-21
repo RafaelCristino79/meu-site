@@ -524,4 +524,9 @@
 
 
 
-/* Aqui é a seção de UX */
+
+@media screen and (min-width: 2560px) {
+    .text-p{
+        font-size: 20px;
+    }
+}

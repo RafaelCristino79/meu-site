@@ -1025,4 +1025,13 @@ section.success .interface {
     padding-top: 200px;
 }
 
+section.success {
+    height: 100vh;
+}
+
+section.success .flex {
+    justify-content: center;
+    align-items: center;
+}
+
 

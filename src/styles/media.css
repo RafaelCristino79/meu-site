@@ -852,6 +852,14 @@
         flex-direction: column;
         gap: 20px;
     }
+
+
+    section.success .interface .flex .success-text {
+        flex: 1;
+    }
+    
+    section.success .text-h1 {
+        line-height: 1;
    
 
 }

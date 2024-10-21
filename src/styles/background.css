@@ -236,3 +236,26 @@ section.success {
 
     /*DESATIVADOS */
 }
+
+@media screen and (min-width: 3024px) {
+    .horse-shadow {
+        right: 30%;
+        top: 450px;
+        width: 600px;
+        height: 600px;
+    }
+
+    section.solution .solution-bg {
+        width: 800px;
+        height: 800px;
+        left: 40%;
+        top: 280px;
+    }
+
+    section.exp .exp-bg {
+    width: 400px;
+    height: 400px;
+    top: 900px;
+    left: 45%;
+    }
+}

@@ -354,6 +354,7 @@ section.priority .card-text {
     display:flex ;
     align-items: center;
     gap: 15px;
+    max-width: 70%;
 }
 
 section.priority .cards-h1 {
@@ -593,35 +594,51 @@ section.exp .exp-title .subtitle {
     line-height: 44px;
 }
 
-section.exp .exp-cards {
-    display: flex;  
-    flex-wrap: wrap;
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%; /* Garante que os slides ocupem 100% da altura */
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch; /* Força que todos os slides tenham a mesma altura */
+}
+
+.exp-cards {
+    display: flex;
+    flex-wrap: nowrap; /* Não quebra linha, pois é um carrossel */
     justify-content: center;
     margin-top: 80px;
     gap: 20px;
-    max-width: 100%;
-    min-width: 100%;
-
+    align-items: stretch; /* Garante que os cards tenham a mesma altura */
 }
+
 
 .exp-card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Garante que o conteúdo interno se expanda */
     border-radius: 15px;
     background: #141414;
     transition: ease-in-out 0.2s;
-    justify-content: center;
+    height: 100%; /* Garante que todos os cards ocupem a altura total */
 
 }
+
 
 .exp-card:hover {
     transform: scale(1.05);
 
 }
 
-.exp-card img{
+.exp-card img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: auto;
+    max-height: 60%; /* Limita a altura da imagem para não ultrapassar o espaço disponível */
+    min-height: 60%
 }
 
 .exp-card .exp-card-txt {
@@ -629,7 +646,10 @@ section.exp .exp-cards {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    flex-grow: 1; /* Faz com que o conteúdo textual ocupe o restante do espaço */
 }
 
 .exp-card i {

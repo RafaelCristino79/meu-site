@@ -313,13 +313,25 @@
 
 
     section.exp .exp-cards{
-        flex-direction: column;
+       
+
+        align-items: stretch;
         justify-content: center;
-        align-items: center;
-        padding: 0px;
         margin: 0 auto;
         max-width: 80% !important;
         min-width: 80%;
+    }
+
+    .exp-card img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: auto;
+        max-height: 70%; 
+        min-height: 70%
+    }
+
+    section.exp .exp-card{
+        height: 100%;
     }
 
  
@@ -584,6 +596,19 @@
         font-size: 40px;
     }
 
+    section.priority .interface .flex .card .cards-h1 {
+        font-size: 80px;
+    }
+
+
+    section.priority .interface .flex {
+        align-items: stretch;
+    }
+    
+
+    
+    
+
     .home-text {
         width: 50%;
         gap: 50px;
@@ -761,6 +786,8 @@
         font-size: 34px;
         line-height: 1.4;
     }
+
+
 
     section.form .interface .flex .ebook-img {
 

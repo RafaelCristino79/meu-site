@@ -40,6 +40,7 @@ body {
     z-index: 2000;
 }
 
+
 #navbar ul li a {
     padding: 6px;
 }
@@ -571,6 +572,9 @@ section.rec .rec-number-2   {
 section.exp{
     margin-top: 50px;
     padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 section.exp .flex {
     flex-direction: column;
@@ -610,7 +614,7 @@ section.exp .exp-title .subtitle {
     display: flex;
     flex-wrap: nowrap; /* Não quebra linha, pois é um carrossel */
     justify-content: center;
-    margin-top: 80px;
+
     gap: 20px;
     align-items: stretch; /* Garante que os cards tenham a mesma altura */
 }
@@ -619,9 +623,10 @@ section.exp .exp-title .subtitle {
 .exp-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Garante que o conteúdo interno se expanda */
+    justify-content: center; /* Garante que o conteúdo interno se expanda */
+    align-items: center;
     border-radius: 15px;
-    background: #141414;
+    background: #111111;
     transition: ease-in-out 0.2s;
     height: 100%; /* Garante que todos os cards ocupem a altura total */
 
@@ -630,15 +635,15 @@ section.exp .exp-title .subtitle {
 
 .exp-card:hover {
     transform: scale(1.05);
-
+    background: #1b1b1b;
 }
 
 .exp-card img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: auto;
-    max-height: 60%; /* Limita a altura da imagem para não ultrapassar o espaço disponível */
-    min-height: 60%
+    max-height: 70%; /* Limita a altura da imagem para não ultrapassar o espaço disponível */
+    min-height: 70%;
 }
 
 .exp-card .exp-card-txt {
@@ -649,6 +654,7 @@ section.exp .exp-title .subtitle {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 30px;
     flex-grow: 1; /* Faz com que o conteúdo textual ocupe o restante do espaço */
 }
 

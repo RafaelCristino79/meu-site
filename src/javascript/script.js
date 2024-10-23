@@ -105,6 +105,7 @@ new Swiper('.card-wrapper1', {
     // Optional parameters
     loop: true,
     spaceBetween: 10,
+
   
     // If we need pagination
     pagination: {
@@ -133,11 +134,21 @@ new Swiper('.card-wrapper1', {
   
   });
 
+
+  
+
   //
 
 // Instância do segundo carrossel
 new Swiper('#carrossel2', {
+
+    
     loop: true,
+    autoplay: {
+        delay: 2000, // Tempo em milissegundos entre as trocas de slides
+        disableOnInteraction: true, // Permite que o autoplay continue após a interação do usuário
+    },
+
     spaceBetween: 10,
     pagination: {
         el: '#pagination2', // Paginação específica do segundo carrossel
@@ -159,78 +170,45 @@ new Swiper('#carrossel2', {
             slidesPerView: 3,
         },
     }
+
+    
 });
 
 
 
-  //Modal equipe - 1
 
-  const button = document.querySelector("#btn-modal-1")
-  const modal = document.querySelector("#dialog-1")
-  const buttonClose = document.querySelector("#close-modal")
+
+function initModal(modalId, buttonId, closeButtonId) {
+  const button = document.querySelector(buttonId);
+  const modal = document.querySelector(modalId);
+  const buttonClose = document.querySelector(closeButtonId);
 
   button.onclick = function () {
-    modal.showModal()
+    modal.showModal();
     modal.scrollTop = 0;
-    document.documentElement.classList.add("no-scroll")
-  }
+    modal.classList.add("active");
+    document.documentElement.classList.add("no-scroll");
+  };
 
   buttonClose.onclick = function () {
-    modal.close()
-    document.documentElement.classList.remove("no-scroll")
-  }
+    modal.close();
+    modal.classList.remove("active"); 
+    document.documentElement.classList.remove("no-scroll");
+  };
+}
 
-
-  //Modal equipe - 2
-
-  const button2 = document.querySelector("#btn-modal-2")
-  const modal2 = document.querySelector("#dialog-2")
-  const buttonClose2 = document.querySelector("#close-modal2")
-
-  button2.onclick = function () {
-    modal2.showModal()
-    modal2.scrollTop = 0;
-    document.documentElement.classList.add("no-scroll")
-  }
-
-  buttonClose2.onclick = function () {
-    modal2.close()
-    document.documentElement.classList.remove("no-scroll")
-  }
-
-
-   //Modal equipe - 3
-
-   const button3 = document.querySelector("#btn-modal-3")
-   const modal3 = document.querySelector("#dialog-3")
-   const buttonClose3 = document.querySelector("#close-modal3")
- 
-   button3.onclick = function () {
-     modal3.showModal()
-     modal3.scrollTop = 0;
-     document.documentElement.classList.add("no-scroll")
-   }
- 
-   buttonClose3.onclick = function () {
-     modal3.close()
-     document.documentElement.classList.remove("no-scroll")
-   }
+// Inicializando os modais usando a função genérica
+initModal("#dialog-1", "#btn-modal-1", "#close-modal");
+initModal("#dialog-2", "#btn-modal-2", "#close-modal2");
+initModal("#dialog-3", "#btn-modal-3", "#close-modal3");
+initModal("#dialog-4", "#btn-modal-4", "#close-modal4");
 
 
 
-    //Modal equipe - 4
 
-    const button4 = document.querySelector("#btn-modal-4")
-    const modal4 = document.querySelector("#dialog-4")
-    const buttonClose4 = document.querySelector("#close-modal4")
-  
-    button4.onclick = function () {
-      modal4.showModal()
-      modal4.scrollTop = 0;
-      document.documentElement.classList.add("no-scroll")
-    }
-  
-    buttonClose4.onclick = function () {
-      modal4.close()
-      document.documentElement.classList.remove("no-scroll")
-    }
+
+
+
+
+
+

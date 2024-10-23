@@ -562,6 +562,12 @@
         width: 100%;
     }
 
+
+    dialog .team-modal #social-icon {
+        position: static;
+        font-size: 40pt;
+    }
+
     .text-h1 {
         font-size: 84px;
     }

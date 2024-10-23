@@ -11,8 +11,15 @@ dialog {
     width: 50%;
     height: 50%;
     padding: 70px 20px;
+    margin: 0 auto;
+    display: none;
 
 }
+
+dialog.active {
+    display: flex;
+}
+
 
 dialog::backdrop {
     background-color:#0b0b0b7a;
@@ -29,10 +36,11 @@ dialog .img {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 dialog .img img {
-    width: 300px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -46,6 +54,7 @@ dialog h1 {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    flex: 2;
 }
 
 .desc-team p {

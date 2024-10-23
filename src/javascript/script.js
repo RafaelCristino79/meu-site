@@ -130,6 +130,11 @@ new Swiper('.card-wrapper1', {
         1024: {
             slidesPerView: 3
         },
+    },
+
+    keyboard: {
+        enabled: true, // Habilita a navegação por teclado
+        onlyInViewport: false, // Permite o uso das teclas fora do viewport
     }
   
   });
@@ -169,7 +174,14 @@ new Swiper('#carrossel2', {
         1024: {
             slidesPerView: 3,
         },
+    },
+
+    keyboard: {
+        enabled: true, // Habilita a navegação por teclado
+        onlyInViewport: false, // Permite o uso das teclas fora do viewport
     }
+
+    
 
     
 });

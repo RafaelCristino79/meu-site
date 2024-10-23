@@ -572,9 +572,6 @@ section.rec .rec-number-2   {
 section.exp{
     margin-top: 50px;
     padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 section.exp .flex {
     flex-direction: column;
@@ -614,7 +611,7 @@ section.exp .exp-title .subtitle {
     display: flex;
     flex-wrap: nowrap; /* Não quebra linha, pois é um carrossel */
     justify-content: center;
-
+    margin-top: 80px;
     gap: 20px;
     align-items: stretch; /* Garante que os cards tenham a mesma altura */
 }
@@ -623,7 +620,7 @@ section.exp .exp-title .subtitle {
 .exp-card {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Garante que o conteúdo interno se expanda */
+    justify-content: space-between; /* Garante que o conteúdo interno se expanda */
     align-items: center;
     border-radius: 15px;
     background: #111111;
@@ -642,8 +639,8 @@ section.exp .exp-title .subtitle {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: auto;
-    max-height: 70%; /* Limita a altura da imagem para não ultrapassar o espaço disponível */
-    min-height: 70%;
+    max-height: 60%; /* Limita a altura da imagem para não ultrapassar o espaço disponível */
+    min-height: 60%;
 }
 
 .exp-card .exp-card-txt {

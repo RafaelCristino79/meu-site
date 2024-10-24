@@ -192,6 +192,14 @@
 }
 
 
+@media screen and (max-width: 900px) {
+
+    #navbar .nav_list .nav-item i {
+        display: flex;
+    }
+}
+
+
 
 
 @media screen and (max-width: 768px){

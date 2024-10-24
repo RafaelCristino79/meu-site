@@ -8,21 +8,16 @@
     color: white;
     scroll-behavior: smooth;
     scroll-margin-top: 250px; 
-    
-
 }
 
 ::-webkit-scrollbar {
     width: 8px;
     background-color: rgb(54, 54, 54);
-    
-
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #FF3D3D;
     border-radius: 10px;
-
 }
 
 html.no-scroll {
@@ -35,9 +30,10 @@ body {
 }
 
 
-
 #navbar {
     z-index: 2000;
+    transition: top 0.3s ease; /* Transição suave */
+    top: 0;
 }
 
 
@@ -65,25 +61,15 @@ nav#navbar ul li a:hover::after {
     width: 50%; /* Largura total do link */
 }
 
-
 #navbar.transparent {
     background-color: rgba(0, 0, 0, 0.281); /* Cor transparente ao rolar para baixo */
     backdrop-filter: blur(15px); /* Desfoque do fundo */
     border-bottom: none;
 }
 
-
 #navbar .nav_list .nav-item i {
     display: none
 }
-
-@media screen and (max-width: 900px) {
-
-    #navbar .nav_list .nav-item i {
-        display: flex;
-    }
-}
-
 
 
 .btn-default {
@@ -98,7 +84,6 @@ nav#navbar ul li a:hover::after {
     text-decoration: none;
     transition: background-color .3s ease;
 }
-
 
 button {
     color: #ffffff;
@@ -116,7 +101,6 @@ button {
 button:hover {
     background-color: rgb(255, 0, 0);
 }
-
 
 .btn-default-2{
     border: none;
@@ -149,21 +133,18 @@ button:hover {
     background-color: #CE1B1B;
     cursor: pointer;
     transform: scale(1.05);
-    
 }
 
 .btn-default-2:hover {
     background-color: #CE1B1B;
     cursor: pointer;
     transform: scale(1.05);
-    
 }
 
 .btn-default-cta:hover {
     background-color: #CE1B1B;
     cursor: pointer;
     transform: scale(1.05);
-    
 }
 
 .text-h6 {
@@ -193,7 +174,6 @@ button:hover {
 .text-h3 {
     font-size: 36px;
     font-weight: 700;
-
 }
 
 .text-h4-form {
@@ -216,7 +196,6 @@ button:hover {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-
 }
 
 .text-h4-footer {
@@ -251,7 +230,6 @@ button:hover {
     font-size: 16px;
     line-height: 24px;
     font-weight: 200;
-
 }
 
 .subtitle {
@@ -270,7 +248,6 @@ button:hover {
     border-radius: 40px;
 }
 
-
 /* Estilo de interface responsivo */
 
 .interface {
@@ -282,7 +259,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-
 }
 
 section.home {
@@ -297,11 +273,9 @@ section.home .flex{
     height: 80vh;
 }
 
-
 section.home .home-text span {
     color: #FF3D3D;
 }
-
 
 .home {
     padding-top: 100px;
@@ -315,13 +289,8 @@ section.home .home-text span {
     align-items:flex-start;
 }
 
-
-
-
-
 .ux-text {
     line-height: 20px;
-
 }
 
 .ux {
@@ -340,7 +309,6 @@ section.priority .interface .flex {
     background: rgba(75, 75, 75, 0.07);
     justify-content: center;
     align-items: center;
-
 }
 
 section.priority .card {
@@ -376,7 +344,6 @@ section.map .flex {
 section.map .map-title {
     display: flex;
     flex-direction: column;
-
 }
 
 section.map {
@@ -384,22 +351,17 @@ section.map {
     margin: 100px 0px;  
     align-items: center;
     justify-content: center;
-
 }
-
 
 section.map .map-img img{
     max-width: 100%;
 }
-
 
 .map-text {
     display: flex;
     justify-content:center;
     align-items:center;
     gap: 16px;
-    
-
 }
 
 .map-title h4 {
@@ -419,8 +381,6 @@ section.map .map-img img{
     flex: 1 1 auto;
 }           
 
-
-
 section.team .interface .flex {
     gap: 25px;
     justify-content: center;
@@ -429,7 +389,6 @@ section.team .interface .flex {
 
 section.team .interface .flex a{
     text-decoration: none;
-
 }
 
 .card-wrapper1 {
@@ -444,10 +403,7 @@ section.team .interface .flex a{
     overflow: hidden;
     padding: 20px 10px;
     margin: 0 60px 35px;
-
 }
-
-
 
 .swiper-wrapper {
     display: flex;
@@ -466,7 +422,6 @@ section.team .interface .flex {
     border-radius: 50%;
     width: 10px ; 
     height: 40px;
-    
 }
 
 
@@ -483,7 +438,6 @@ section.team .interface .flex {
     border-radius: 20px;
     transition: ease-in-out 0.2s;
     border: 1px solid rgb(43, 43, 43);
-    
 }
 
 .team-card:hover {
@@ -506,7 +460,6 @@ section.team .interface .flex {
 }
 
 .team-card-text h4 {
-
     font-size: 14pt;
     font-weight: 600;
 }
@@ -540,12 +493,10 @@ section.rec .rec-title {
 }
 
 section.rec .rec-text {
-
     display: flex;
     flex-direction: column;
     width: 500px;
     gap: 58px;
-    
 }
 
 section.rec .rec-number {
@@ -558,9 +509,7 @@ section.rec .rec-number {
 section.rec .rec-number-1 {
     display: flex;
     flex-direction: column;
-
     width: 30%;
-
 }
 
 section.rec .rec-number-2   {
@@ -587,8 +536,6 @@ section.exp .exp-title{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 section.exp .exp-title .subtitle {
@@ -616,7 +563,6 @@ section.exp .exp-title .subtitle {
     align-items: stretch; /* Garante que os cards tenham a mesma altura */
 }
 
-
 .exp-card {
     display: flex;
     flex-direction: column;
@@ -626,7 +572,6 @@ section.exp .exp-title .subtitle {
     background: #111111;
     transition: ease-in-out 0.2s;
     height: 100%; /* Garante que todos os cards ocupem a altura total */
-
 }
 
 
@@ -662,7 +607,6 @@ section.exp .exp-title .subtitle {
 section.cta {
     background: radial-gradient(20.24% 60.13% at 50% 50%, #373738 0%, #252525 100%);
     padding: 0 5%;
-
 }
 
 section.cta .flex {
@@ -699,8 +643,6 @@ section.solution .flex {
 
 .solution-card:hover {
     transform: scale(1.06);
-
-
 }
 
 .solution-card {
@@ -713,7 +655,6 @@ section.solution .flex {
     border-radius: 12px;
     gap: 10px;
     transition: ease-in-out 0.2s;
-
 }
 
 .solution-card h5 {
@@ -767,14 +708,12 @@ section.solution .flex {
     height: 53px;
     border: none;
     max-width: 100%;
-
 }
 
 #form-submit:hover {
     background: #cf1d1d;
     cursor: pointer;
     transform: scale(1.05);
-    
 }
 
 section.form {
@@ -794,7 +733,12 @@ section .ebook-form {
     flex-direction: column;
     gap: 40px;
     justify-content: center;
+}
 
+section .ebook-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -809,7 +753,6 @@ section.faq .flex {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
 .accordion {
@@ -817,10 +760,7 @@ section.faq .flex {
     flex-direction: column;
     width: 850px;
     border-radius: 8px;
-
     cursor: pointer;
-
-
 }
 
 .accordion-header {
@@ -832,7 +772,6 @@ section.faq .flex {
     background-color: #181818;
     padding: 16px;
     border-radius: 8px;
-    
 }
 
 .accordion-header:hover {
@@ -840,14 +779,11 @@ section.faq .flex {
 }
 
 .accordion-body {
-    
     opacity: 0;
     height: 0;
     padding: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
-
-
 }
 
 .accordion span {
@@ -884,9 +820,6 @@ section.cta-wpp {
 
     background: linear-gradient(91deg, #0B0B0B 41.99%, #1F1F1F 99.09%);
     padding: 60px;
- 
-
-
 }
 
 section.cta-wpp .flex {
@@ -928,12 +861,6 @@ footer .flex {
     flex-direction: column;
 }
 
-
-
-
-
-
-
 footer.footer .footer-form {
     display: flex;
     flex-direction: column;
@@ -947,7 +874,6 @@ footer.footer .footer-form form {
     width: 100%;
 }
 
-
 .footer-form-email {
     display: flex;
     gap: 8px;
@@ -955,7 +881,6 @@ footer.footer .footer-form form {
     justify-content: center;
 
 }
-
 
 #form-email-text {
     display: flex;
@@ -987,7 +912,6 @@ footer.footer .footer-form form {
     background: #cf1d1d;
     cursor: pointer;
 }
-
 
 .footer-logo {
     max-width: 300px;
@@ -1043,7 +967,6 @@ footer .footer-others ul a {
 
 }
 
-
 section.success .interface {
     padding-top: 200px;
 }
@@ -1056,5 +979,3 @@ section.success .flex {
     justify-content: center;
     align-items: center;
 }
-
-

@@ -14,16 +14,30 @@ function handleScroll() {
     if (isMenuOpen) return; // Se o menu estiver aberto, não faz nada
 
     let scrollTop = window.pageYOffset;
+}
 
-    // Ocultar navbar ao rolar para baixo e mostrar ao rolar para cima
+   // Manipula o evento de scroll
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
     if (scrollTop > lastScrollTop) {
+        // Scroll para baixo - esconder navbar
         navbar.style.top = "-100px"; // Esconde a navbar com transição suave
     } else {
-        navbar.style.top = "0"; // Mostra a navbar com transição suave
+        // Scroll para cima - mostrar navbar
+        navbar.style.top = "0";
+    }
+
+    // Alternar entre a classe transparente e a sólida dependendo da posição do scroll
+    if (scrollTop > 0) {
+        navbar.classList.add("transparent");
+    } else {
+        navbar.classList.remove("transparent");
     }
 
     lastScrollTop = scrollTop;
-}
+});
+
 
 // Evento de clique no botão do menu mobile
 btnmobile.addEventListener("click", () => {
@@ -185,6 +199,95 @@ new Swiper('#carrossel2', {
 
     
 });
+
+
+
+
+// Instância do terceiro carrossel
+new Swiper('#carrossel3', {
+
+    
+    loop: true,
+    autoplay: {
+        delay: 2000, // Tempo em milissegundos entre as trocas de slides
+        disableOnInteraction: true, // Permite que o autoplay continue após a interação do usuário
+    },
+
+    spaceBetween: 10,
+    pagination: {
+        el: '#pagination3', // Paginação específica do segundo carrossel
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '#next3', // Botões de navegação específicos do segundo carrossel
+        prevEl: '#prev3',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+
+    keyboard: {
+        enabled: true, // Habilita a navegação por teclado
+        onlyInViewport: false, // Permite o uso das teclas fora do viewport
+    }
+
+    
+
+    
+});
+
+
+// Instância do quarto carrossel
+new Swiper('#carrossel4', {
+
+    
+    loop: true,
+    autoplay: {
+        delay: 2000, // Tempo em milissegundos entre as trocas de slides
+        disableOnInteraction: true, // Permite que o autoplay continue após a interação do usuário
+    },
+
+    spaceBetween: 10,
+    pagination: {
+        el: '#pagination4', // Paginação específica do segundo carrossel
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '#next4', // Botões de navegação específicos do segundo carrossel
+        prevEl: '#prev4',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+
+    keyboard: {
+        enabled: true, // Habilita a navegação por teclado
+        onlyInViewport: false, // Permite o uso das teclas fora do viewport
+    }
+
+    
+
+    
+});
+
 
 
 

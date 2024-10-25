@@ -33,6 +33,11 @@ header {
     gap: 40px;
 }
 
+.nav_list.active {
+    width: 50vw;          
+    height: 100vh;         
+}
+
 .nav-item a {
     text-decoration: none;
     color: #FFF;

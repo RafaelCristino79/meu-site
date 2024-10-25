@@ -156,6 +156,7 @@ section.business-law .law-card {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
 }
 
 section.web3 .law-card {

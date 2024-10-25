@@ -9,12 +9,6 @@
     scroll-margin-top: 250px; 
 }
 
-.card-wrapper3 {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 20px 10px;
-    margin: 0 60px 35px;
-}
 
 .card-wrapper4 {
     max-width: 100%;
@@ -148,16 +142,33 @@ section.ux-areas .flex {
 }
 
 
+.card-wrapper3 {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 0 60px 35px;
+}
 
-section.business-law .law-card {
+.law-cards {
+    display: flex;
+    flex-wrap: nowrap; /* Não quebra linha, pois é um carrossel */
+    justify-content: center;
+    margin-top: 80px;
+    gap: 20px;
+    align-items: stretch; /* Garante que os cards tenham a mesma altura */
+}
+
+.law-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #595252;
     border-radius: 16px;
     padding: 70px 20px;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
-    
+    height: 100%;   
 }
+
+
 
 section.web3 .law-card {
     border: 1px solid #595252;
@@ -167,6 +178,8 @@ section.web3 .law-card {
     flex-direction: column;
     gap: 30px;
 }
+
+
 
 
 .law-card img {

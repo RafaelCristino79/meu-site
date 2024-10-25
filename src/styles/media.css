@@ -320,6 +320,9 @@
 
     }
  
+    section.ux-areas{
+        margin-bottom: 30px;
+        }
 
     section.exp{
         padding:0px;
@@ -648,7 +651,7 @@
     }
 
     .text-h1 {
-        font-size: 84px;
+        font-size: 80px;
     }
 
     .text-h4 {
@@ -689,8 +692,6 @@
     section.priority .interface .flex {
         align-items: stretch;
     }
-    
-
     
     
 
@@ -742,6 +743,8 @@
         gap: 35px;
     
     }
+
+
 
     button {
         color: #ffffff;
@@ -974,5 +977,81 @@
         line-height: 1;
    
 
-}
+    }
+
+
+    /*area */
+
+    .homeArea-img {
+        display: flex;
+        width: 100%;
+
+    }
+    .homeArea-copy {
+        display: flex;
+        flex: 2;
+    }
+
+    .homeArea-img img {
+        width: 50%;
+        
+    }
+
+    .homeArea-img {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    }
+
+    .text-h1-areas {
+        font-size: 120px;
+    }
+    
+    .text-h2-areas {
+        padding: 0;
+        font-weight: 500;
+        font-size: 50px;
+        font-family: "Outfit", sans-serif;
+        line-height: 1;
+    }
+    
+    .text-h3-areas {
+        padding: 0;
+        font-weight: 100;
+        font-size: 34px;
+        font-family: "Outfit", sans-serif;
+    }
+
+    .homeArea-text .text-h4 {
+        font-size: 40px;
+        line-height: 1.5;
+    }
+
+    .law-card-title .text-h4 {
+        font-size: 30px;
+    }
+
+    .law-card img {
+        width: 100px;
+    }
+
+    .law-card-middle img {
+        width: 100px;
+    }
+
+    .law-card {
+        padding: 200px 40px;
+        justify-content: center;
+    }
+
+    
+    section.web3 .law-card {
+        padding: 180px 40px;
+        justify-content: center;
+    }
+
+    .law-card-middle {
+        justify-content: center;
+    }
+
 }

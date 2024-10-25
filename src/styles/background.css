@@ -154,12 +154,12 @@ section.home-areas {
 section.home-areas .homeArea-shadow {
     position: absolute;
     width: 800px;
-    height: 400px;
+    height: 500px;
     border-radius: 50%;
     background-color: #29282b;
-    filter: blur(100px);
+    filter: blur(80px);
     z-index: -1;
-    left: -45%;
+    left: -25%;
     top: 20%;
 }
 

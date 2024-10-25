@@ -238,6 +238,11 @@
         padding-bottom: 10px;
     }
 
+    .ux-text .subtitle {
+
+        line-height: 2;
+    }
+
 
 
     section.priority .interface .flex  {
@@ -552,7 +557,9 @@
     }
 
 
-
+    section.areas-middle {
+        margin-bottom: 80px;
+    }
 
     
 

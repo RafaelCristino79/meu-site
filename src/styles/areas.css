@@ -47,14 +47,14 @@
 }
 
 section.home-areas {
-    height: 80vh;
+    height: 100vh;
 }
 
 
 section.home-areas .flex {
    justify-content: space-between;
    align-items: center;
-   margin-top: 200px;
+   margin-top: 110px;
 }
 
 
@@ -83,6 +83,18 @@ section.home-areas .flex {
     border-radius: 20px;
 }
 
+.sugestao-areas-mobile {
+    display: none;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.sugestao-areas-mobile p {
+    padding: 4px 20px;
+    border: 1px solid #323232;
+    border-radius: 20px;
+}
+
 .homeArea-text {
     display: flex;
     flex-direction: column;
@@ -101,6 +113,7 @@ section.home-areas .flex {
     color: transparent;
     line-height: 1;
 }
+
 
 section.areas-middle {
     margin-bottom: 120px;

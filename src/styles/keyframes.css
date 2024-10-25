@@ -35,6 +35,19 @@
     }
 }
 
+@keyframes flutuar4 {
+
+    from {
+        transform: translateY(100%);
+        filter: blur(200px);
+    }
+
+    to {
+        transform: translateY(0%);
+        filter: blur(0px);
+    }
+}
+
 #navbar {
     animation: flutuar3 0.5s ease-in;
 }
@@ -56,3 +69,32 @@
 section.priority .flex{
     animation: flutuar 1s ease-in-out;
 }
+
+section.home-areas  .homeArea-copy .sugestao-areas-mobile{
+    animation: flutuar2 1.2s ease-in-out;
+}
+
+section.home-areas  .homeArea-copy{
+    animation: flutuar2 1s ease-in-out;
+}
+
+section.home-areas .homeArea-img {
+    animation: flutuar4 1.5s ease-in-out;
+}
+
+@keyframes girar {
+    from {
+      transform: rotate(-20deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+
+    100%, 50%, 0% {
+        opacity: 1; /* Visível */
+      }
+      75%, 25% {
+        opacity: 0; /* Invisível */
+      }
+  }
+

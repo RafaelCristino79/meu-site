@@ -499,6 +499,64 @@
     .text-h1 {
         font-size: 48px;
     }
+
+    /* Regras da página áreas de atuação*/
+
+
+    .text-h1-areas {
+        font-size: 48px;
+    }
+
+    .text-h3-areas {
+        font-size: 24px;
+    }
+
+    .text-h2-areas {
+        font-size: 34px;
+    }
+
+    .areas-middle .areas-text p{
+        line-height: 1.5;
+    }
+
+
+    .homeArea-copy {
+        max-width: 100%;
+    }
+
+    .sugestao-areas {
+        display: none;
+        flex-direction: row;
+        gap: 7px;
+    }
+
+    .sugestao-areas-mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+
+    .homeArea-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 100%;
+    }
+
+    .homeArea-img img {
+
+        max-width: 80%;
+        rotate: 45;
+        animation: girar 4s ease-in-out infinite alternate-reverse;
+        
+    }
+
+
+
+
+    
+
+    /* Regras da página áreas de atuação*/
     
     .text-h4 {
         font-size: 16px;
@@ -528,7 +586,6 @@
         }
     }
 
-}
 
 
 
@@ -904,4 +961,6 @@
    
 
 }
+}
+
 }

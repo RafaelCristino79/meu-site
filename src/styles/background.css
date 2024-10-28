@@ -18,6 +18,7 @@ section.home {
 
 }
 
+
 .circle {
     width: 600px;
     height: 600px;
@@ -158,8 +159,8 @@ section.home-areas .homeArea-shadow {
     border-radius: 50%;
     background-color: #29282b;
     filter: blur(80px);
-    z-index: -1;
-    left: -25%;
+    z-index: -2;
+    left: -45%;
     top: 20%;
 }
 
@@ -169,6 +170,8 @@ section.home-areas .homeArea-shadow {
         right: 70%;
         top: 20%;
     }
+
+ 
 
     section.rec .rec-bg {
 
@@ -212,12 +215,60 @@ section.home-areas .homeArea-shadow {
     }
 }
 
+@media screen and (max-width:1366px) {
+    .horse-shadow {
+        position: absolute;
+        right:15%;
+        top: 130px;
+        z-index: -1;
+        border-radius: 50%;
+        background-color: #25242B;
+        filter: blur(50px);
+        width: 350px;
+        height: 350px;
+    
+    }
+
+    .circle {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #25242B;
+        filter: blur(100px);
+        position: absolute;
+        right: -400px;
+        top: -25%;
+        z-index: -1;
+    }
+
+    section.priority .btc-right {
+        filter: grayscale(1);
+        position: absolute;
+        right: -25%;
+        top: -200px;
+        z-index: -1;
+    
+    
+    }
+    
+    section.priority .btc-left {
+        filter: grayscale(1);
+        position: absolute;
+        left: -45%;
+        top: -200px;
+        z-index: -1;    
+    
+    }
+}
+
 
 /*página ebook */ 
 section.success {
     overflow: hidden;
     position: relative;
 }
+
+
 
 @media screen and (max-width:1280px) {
     section.priority .btc-right {
@@ -230,6 +281,7 @@ section.success {
         display: none;
     
     }
+
 }
 
 @media screen and (max-width: 768px) {

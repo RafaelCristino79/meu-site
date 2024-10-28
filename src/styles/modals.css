@@ -8,13 +8,14 @@ dialog {
     background: linear-gradient(to left, #111111, #000000);
     border: 1px solid rgb(34, 34, 34);
     border-radius: 12px;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     padding: 70px 20px;
     margin: 0 auto;
     display: none;
 
 }
+
 
 dialog.active {
     display: flex;

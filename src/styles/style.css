@@ -38,7 +38,9 @@ body {
 
 
 #navbar ul li a {
-    padding: 6px;
+    
+    font-size: 11pt;
+    padding-bottom: 6px;
 }
 
 nav#navbar ul li a {
@@ -323,7 +325,7 @@ section.priority .card-text {
     display:flex ;
     align-items: center;
     gap: 15px;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 section.priority .cards-h1 {
@@ -741,7 +743,92 @@ section .ebook-img {
     justify-content: center;
 }
 
+section.contact-form {
+    margin-top: 100px;
+}
 
+section.contact-form  .flex{
+    gap: 60px;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid rgb(43, 43, 43);
+    background-color: #080808ad;
+    border-radius: 4px;
+}
+
+
+.form-container {
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    background-color: #141414;
+    border-radius: 6px;
+    max-width: 40%
+}
+
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-container label {
+    font-size: 9pt;
+    font-weight: 300;
+    color: #ececec;
+}
+
+.contact-form-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    max-width: 50%;
+    
+}
+
+.form-container  input{
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    background-color: #141414;
+    width: 100%;    
+    height: 40px;
+    color: white;
+    padding: 10px 0px;
+}
+
+.form-container  input:focus{
+    padding: 10px 10px;
+    border-color: #0D0D0D;
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+
+textarea {
+    background-color: #050505;
+    padding: 10px;
+    border: 1px solid #1b1b1b;
+    resize: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-button {
+    background: #f71414;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+}
 
 section.faq {
     margin-top: 80px;
@@ -788,6 +875,7 @@ section.faq .flex {
 
 .accordion span {
     text-align: left;
+    font-weight: 200;
 }
 
 .accordion-body.active {

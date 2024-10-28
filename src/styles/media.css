@@ -14,6 +14,7 @@
         padding: 0px;
     }
 
+    
     .desc-team i {
         position: absolute;
         top: 10px !important;
@@ -22,7 +23,6 @@
     }
 
 
-    
     .flex {
         flex-wrap: wrap;
         padding: 0 10%;
@@ -255,12 +255,12 @@
     section.priority .interface .flex  {
         flex-direction: column;
         padding: 20px 0%;
-  
     }   
 
     section.priority .card {
         background-color: transparent;
         border: none;
+
     }
 
     section.map {
@@ -591,6 +591,36 @@
     section.success .text-h1 {
         line-height: 1;
     }
+
+    section.contact-form  .flex{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .form-container {
+        max-width: 100%
+    }
+
+    .contact-form-text {
+        max-width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    section.contact-form  .flex{
+        border: none;
+    }
+
+    section.contact-form {
+        margin-top: 50px;
+    }
+
+    section.contact-form  .flex{
+        gap: 20px;
+    }
+    
 
     @keyframes flutuar {
 

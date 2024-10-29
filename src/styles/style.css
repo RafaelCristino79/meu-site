@@ -791,7 +791,7 @@ section.contact-form  .flex{
     
 }
 
-.form-container  input{
+.form-container input{
     border: none;
     border-bottom: 1px solid #1d1d1d;
     background-color: #141414;
@@ -799,12 +799,20 @@ section.contact-form  .flex{
     height: 40px;
     color: white;
     padding: 10px 0px;
+    transition: transform 0.5s ease;
 }
 
 .form-container  input:focus{
     padding: 10px 10px;
     border-color: #0D0D0D;
     border-bottom: 1px solid rgb(54, 54, 54);
+
+}
+
+.form-container  input:hover{
+    border-color: #0D0D0D;
+    border-bottom: 1px solid rgb(54, 54, 54);
+
 }
 
 textarea {
